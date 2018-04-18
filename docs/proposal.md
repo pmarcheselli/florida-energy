@@ -37,27 +37,15 @@ The majority of expected users would most likely be accessing FESC during their 
 The following are recommendations along with deliverables to redesign the Florida Energy Systems Consortium website to a more easily navigable site that meets industry standards. 
 
   #### Deliverables:
-  1. Make website responsive
-  *Website will display properly on all devices ranging from large desktops to mobile devices.* 
-  2. Redesign navbar
-  *Create a new navbar that is easy to navigate and displays links in a readable manner.*
-  3. Move search bar
-  *Properly position search bar to a location that is easier to access and does not get lost above page header, preferably under nav bar.*
-  4. Redesign aside 
-  *Create new aside that displays links in a more organized way.*
-  5. Redesign main section
-  *Design better layout for main section to include more interactive content and less wordy text.*
-  6. Resize and reposition social media links & newsletter sign up.
-  *Add smaller social media links and reposition to footer and reposition newsletter sign up to navbar*
-  7. Redesign footer 
-  *Create smaller footer with links*
-  8. Adjust text
-  *Resize text to a readable size*
-  9. Adjust clickable elements
-  *Redesign all clickable elements so that they are not too close together and easier to function on mobile devices*
-  10. Set viewport
-  *Viewport is currently not set and it is industry standard to set the viewport for each intended device.*
-  11. Reduce image sizes
-  *Audit image sizes and scale down to assist in faster site load time.* 
-  12. Improve internal site navigation
-  *Redesign internal landing pages to effectively be accessed by homepage.*
+  1. **Make website responsive** - Website will display properly on all devices ranging from large desktops to mobile devices.
+  2. **Redesign navbar** - Create a new navbar that is easy to navigate and displays links in a readable manner.
+  3. **Move search bar** - Properly position search bar to a location that is easier to access and does not get lost above page header, preferably under nav bar.
+  4. **Redesign aside** - Create new aside that displays links in a more organized way.
+  5. **Redesign main section** - Design better layout for main section to include more interactive content and less wordy text.
+  6. **Resize and reposition social media links & newsletter sign up.** - Add smaller social media links and reposition to footer and reposition newsletter sign up to navbar.
+  7. **Redesign footer** - Create smaller footer with links.
+  8. **Adjust text** - Resize text to a readable size.
+  9. **Adjust clickable elements** - Redesign all clickable elements so that they are not too close together and easier to function on mobile devices.
+  10. **Set viewport** - Viewport is currently not set and it is industry standard to set the viewport for each intended device.
+  11. **Reduce image sizes** - Audit image sizes and scale down to assist in faster site load time.
+  12. **Improve internal site navigation** - Redesign internal landing pages to effectively be accessed by homepage.

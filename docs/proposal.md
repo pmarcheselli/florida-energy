@@ -1,10 +1,8 @@
-Florida Energy Systems Consortium
+# Florida Energy Systems Consortium
 
 ## Website Redesign Proposal
 
 (http://floridaenergy.ufl.edu/)
-
-***
 
 ### A. Objective of Redesign
 

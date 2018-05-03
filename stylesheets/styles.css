@@ -46,6 +46,7 @@ nav ul {
 
 article {
   width: 100%;
+  height: 100%;
   padding: 0;
   margin: 0;
   background-color: #ECECEC; }
@@ -54,6 +55,10 @@ article {
     font-size: 2rem;
     color: #26265E;
     padding: 2rem; }
+  article p, article h2 {
+    margin: 1rem;
+    padding: .5rem;
+    text-align: center; }
 
 .intro {
   width: 100%;
@@ -63,42 +68,53 @@ article {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row-wrap;
-          flex-flow: row-wrap; }
-  .intro .video {
-    margin: 0.75rem; }
-  .intro .info {
-    margin: 0.75rem;
-    padding: .5rem; }
-
-.card-container {
-  width: 90%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+          flex-flow: row-wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  .intro .video {
+    margin: 2rem; }
+  .intro .info {
+    padding: .5rem 0; }
 
-.card {
+.card-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 3rem 0; }
+
+.card {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 350px;
+          flex: 0 0 350px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  padding: 0.75rem 3rem;
+  padding: 0.5rem;
   margin: 1rem;
   background-color: #8C8CBF; }
   .card a {
     color: #ECECEC;
     text-decoration: none;
     font-display: 'Raleway'; }
+  .card h3 {
+    text-align: center;
+    padding: 0.5rem; }
   .card p {
     color: #26265E;
-    padding: 0.75rem; }
+    padding: 0.5rem;
+    text-align: center; }
+  .card img {
+    max-width: 100%; }
 
 .card:hover {
   -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);

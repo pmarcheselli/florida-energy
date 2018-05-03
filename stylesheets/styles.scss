@@ -22,7 +22,7 @@ body {
   display: flex;
   align-items: baseline;
   width: 100%;
-//  background-color: $highlight-color;
+  //  background-color: $highlight-color;
   .logo {
     margin: 0.75rem 0.75rem 0 0.75rem;
   }
@@ -36,10 +36,10 @@ body {
 
 nav {
   width: 100%;
-// TODO: figure out where sticky nav should go
-//  position: fixed;
-//  overflow: hidden;
-//  top: 0;
+  // TODO: figure out where sticky nav should go
+  //  position: fixed;
+  //  overflow: hidden;
+  //  top: 0;
 }
 
 nav ul {
@@ -47,8 +47,8 @@ nav ul {
   justify-content: space-around;
   align-items: center;
   background-color: $main-color;
-//  padding: 0;
-//  margin: 0;
+  //  padding: 0;
+  //  margin: 0;
   li {
     padding: 1rem;
     text-align: center;
@@ -177,7 +177,7 @@ footer {
       margin: 0.5rem;
       padding: 1rem;
       width: 50%;
-      p {
+      label {
         color: white;
       }
     }

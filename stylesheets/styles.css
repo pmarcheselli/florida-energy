@@ -75,11 +75,8 @@ article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /*  flex-flow: row-wrap;*/
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
@@ -96,8 +93,12 @@ article {
   margin: 1rem;
   background-color: #8C8CBF; }
   .card a {
-    color: white;
-    text-decoration: none; }
+    color: #ECECEC;
+    text-decoration: none;
+    font-display: 'Raleway'; }
+  .card p {
+    color: #26265E;
+    padding: 0.75rem; }
 
 .card:hover {
   -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -143,7 +144,7 @@ footer {
       -webkit-box-direction: normal;
           -ms-flex-flow: row wrap;
               flex-flow: row wrap; }
-    .footer-top .social-container fb-share-button {
+    .footer-top .social-container .fb-share-button {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -151,7 +152,7 @@ footer {
       -webkit-box-direction: normal;
           -ms-flex-flow: row wrap;
               flex-flow: row wrap; }
-    .footer-top .social-container twitter-share-button {
+    .footer-top .social-container .twitter-share-button {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;

@@ -6,11 +6,19 @@ body {
   font-size: 100%;
   font-family: 'Raleway', 'Lato', sans-serif; }
 
-.logo {
+.logo-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0.75rem; }
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  width: 100%; }
+  .logo-container .logo {
+    margin: 0.75rem 0.75rem 0 0.75rem; }
+  .logo-container .search-box {
+    margin-left: auto;
+    padding-left: 0.75rem; }
 
 nav {
   width: 100%; }

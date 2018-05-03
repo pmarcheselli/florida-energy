@@ -64,10 +64,18 @@
   
   <header>
   <!-- Header with section for logo & heading, and sticky nav bar --> 
-    <section class="logo">
-      <img src="images/header_logo.png" alt="Florida Energy Systems Consortium logo">
-      <h1>Florida Energy Systems Consortium</h1>
-    </section>
+    <div class="logo-container">
+      <div class="logo">
+        <img src="images/header_logo.png" alt="Florida Energy Systems Consortium logo">
+      </div>
+      
+      <div class="search-box">
+          <form>
+            <input type="text" name="search">
+            <button type="submit">Search</button>
+          </form>
+      </div>
+    </div>
   
     <nav>
       <ul>
@@ -80,19 +88,13 @@
         <li><a href="#">ABOUT US</a></li>
         <li><a href="contact-us.html">CONTACT US</a></li>
       </ul>
-      
-      <section>Search:
-        <form>
-          <input type="text" name="search">
-          <button type="submit">Search</button>
-        </form>
-      </section>
     </nav>
   </header>
   
   <article>
     <!-- Main home page intro section -->
     <section>
+      <h1>Florida Energy Systems Consortium</h1>
       <h2>Bringing Energy Solutions to Florida, the Nation and the World</h2>
 
       <p>The Florida Energy Systems Consortium (FESC) was created by the Florida State government to promote collaboration among the energy experts at its 12 supported universities to share energy-related expertise. The consortium assists the state in the development and implementation of an environmentally compatible, sustainable, and efficient energy strategic plan.</p>

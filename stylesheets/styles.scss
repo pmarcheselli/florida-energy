@@ -1,5 +1,6 @@
 $brand: #26265E;
 $accent: #8C8CBF;
+$highlight: #ECECEC;
 
 body {
   margin: 0;
@@ -9,10 +10,21 @@ body {
   font-family: 'Raleway', 'Lato', sans-serif;
 }
 
-.logo {
+.logo-container {
   display: flex;
-  margin: 0.75rem;
+  align-items: baseline;
+  width: 100%;
+//  background-color: $highlight;
+  .logo {
+    margin: 0.75rem 0.75rem 0 0.75rem;
+  }
+  .search-box {
+    margin-left: auto;
+    padding-left: 0.75rem;
+  }
 }
+
+
 
 nav {
   width: 100%;

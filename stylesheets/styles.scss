@@ -24,8 +24,6 @@ body {
   }
 }
 
-
-
 nav {
   width: 100%;
 // TODO: figure out where sticky nav should go
@@ -39,6 +37,8 @@ nav ul {
   justify-content: space-around;
   align-items: center;
   background-color: $brand;
+//  padding: 0;
+//  margin: 0;
   li {
     padding: 1rem;
     text-align: center;
@@ -54,6 +54,35 @@ nav ul {
   }
 }
 
+article {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: $highlight;
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: $brand;
+    padding: 2rem;
+  }
+}
+
+.intro {
+  width: 100%;
+  display: flex;
+  flex-flow: row-wrap;
+  .video {
+    margin: 0.75rem;
+  }
+  .info {
+    margin: 0.75rem;
+    padding: .5rem;
+  }
+}
+
+
+
+
 .card-container {
   width: 90%;
   display: flex;
@@ -65,14 +94,71 @@ nav ul {
 
 .card {
     display: flex;
-  /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     padding: 0.75rem 3rem;
     margin: 1rem;
+    background-color: $accent;
+    a {
+    color: white;
+    text-decoration: none;
+  }
 }
 
-/* Deeper shadow on hover */
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+footer {
+  width: 100%;
+  margin: auto;
+  background-color: $brand;
+}
+
+.footer-top {
+  width: 100%;
+  display: flex;
+  flex-flow: row-wrap;
+  justify-content: center;
+  .social-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 1rem;
+    margin: 0.5rem;
+    width: 50%;
+    p {
+      color: white;
+      display: flex;
+      flex-flow: row wrap;
+    }
+    fb-share-button { 
+      display: flex;
+      flex-flow: row wrap;
+    }
+    twitter-share-button {
+      display: flex;
+      flex-flow: row wrap;
+    }
+  }
+  .newsletter-container {
+    align-self: center;
+    justify-content: center;
+    margin: 0.5rem;
+    padding: 1rem;
+    width: 50%;
+    p {
+      color: white;
+    }
+  }
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    p {
+      color: white;
+    }
 }

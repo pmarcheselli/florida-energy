@@ -4,7 +4,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 100%;
-  font-family: 'Raleway', 'Lato', sans-serif; }
+  font-family: "Raleway", sans-serif; }
 
 .logo-container {
   display: -webkit-box;
@@ -102,6 +102,9 @@ article {
   padding: 0.5rem;
   margin: 1rem;
   background-color: #8C8CBF; }
+  .card:hover {
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
   .card a {
     color: #ECECEC;
     text-decoration: none;
@@ -116,77 +119,72 @@ article {
   .card img {
     max-width: 100%; }
 
-.card:hover {
-  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
-
 footer {
   width: 100%;
   margin: auto;
   background-color: #26265E; }
-
-.footer-top {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row-wrap;
-          flex-flow: row-wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .footer-top .social-container {
+  footer .footer-top {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
+        -ms-flex-flow: row-wrap;
+            flex-flow: row-wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center;
-    padding: 1rem;
-    margin: 0.5rem;
-    width: 50%; }
-    .footer-top .social-container p {
-      color: white;
+            justify-content: center; }
+    footer .footer-top .social-container {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-flow: row wrap;
-              flex-flow: row wrap; }
-    .footer-top .social-container .fb-share-button {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-flow: row wrap;
-              flex-flow: row wrap; }
-    .footer-top .social-container .twitter-share-button {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-flow: row wrap;
-              flex-flow: row wrap; }
-  .footer-top .newsletter-container {
-    -ms-flex-item-align: center;
-        align-self: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 0.5rem;
-    padding: 1rem;
-    width: 50%; }
-    .footer-top .newsletter-container p {
-      color: white; }
+              flex-flow: row wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding: 1rem;
+      margin: 0.5rem;
+      width: 50%; }
+      footer .footer-top .social-container p {
+        color: white;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap; }
+      footer .footer-top .social-container .fb-share-button {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap; }
+      footer .footer-top .social-container .twitter-share-button {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap; }
+    footer .footer-top .newsletter-container {
+      -ms-flex-item-align: center;
+          align-self: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin: 0.5rem;
+      padding: 1rem;
+      width: 50%; }
+      footer .footer-top .newsletter-container p {
+        color: white; }
 
 .copyright {
   display: -webkit-box;

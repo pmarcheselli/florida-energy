@@ -6,14 +6,21 @@ $highlight-color: #ECECEC;
 $main-font: 'Raleway', sans-serif;
 $secondary-font: 'Lato', sans-serif;
 
-// GLOBAL BODY STYLES
+// GLOBAL STYLES
 
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
   font-size: 100%;
   font-family: $main-font;
+}
+
+img {
+  max-width: 100%;
 }
 
 // HEADER LOGO
@@ -35,11 +42,7 @@ body {
 // HEADER NAV BAR
 
 nav {
-  width: 100%;
-  // TODO: figure out where sticky nav should go
-  //  position: fixed;
-  //  overflow: hidden;
-  //  top: 0;
+  width: auto;
 }
 
 nav ul {
@@ -47,8 +50,6 @@ nav ul {
   justify-content: space-around;
   align-items: center;
   background-color: $main-color;
-  //  padding: 0;
-  //  margin: 0;
   li {
     padding: 1rem;
     text-align: center;
@@ -68,15 +69,13 @@ nav ul {
 
 article {
   width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
   background-color: $highlight-color;
   h1 {
     text-align: center;
     font-size: 2rem;
     color: $main-color;
     padding: 2rem;
+    margin: 0;
   }
   p, h2 {
     margin: 1rem;

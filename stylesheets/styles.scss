@@ -1,6 +1,6 @@
 // VARIABLES
 
-$main-color: #26265E;
+$main-color: #062a5c;
 $accent-color: #8C8CBF;
 $highlight-color: #ECECEC;
 $no-color: #FFFFFF;
@@ -18,6 +18,12 @@ $secondary-font: 'Lato', sans-serif;
 body {
   font-size: 100%;
   font-family: $main-font;
+}
+
+h1 {
+  font-size: 2rem;
+  color: $no-color;
+  letter-spacing: 2px;
 }
 
 img {
@@ -68,11 +74,6 @@ nav ul {
 
 // GLOBAL ARTICLE STYLES
 
-h1 {
-  font-size: 2.5rem;
-  color: $highlight-color;
-  padding: 2rem;
-}
 
 //article {
 //  width: 100%;
@@ -87,7 +88,7 @@ h1 {
 // Hero
 
 .hero-image {
-  width: 100%;
+  height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,14 +96,12 @@ h1 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 30vh;
-//  background-image: url("https://pmarcheselli.github.io/florida-energy/images/solar.jpg") top left/cover no-repeat;
-//  background-image: url('https://pmarcheselli.github.io/florida-energy/images/solar.jpg') top left/cover no-repeat;
   .hero-text {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+//    opacity: 0.95;
   }
 }
 

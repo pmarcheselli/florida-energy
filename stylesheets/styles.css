@@ -8,6 +8,11 @@ body {
   font-size: 100%;
   font-family: "Raleway", sans-serif; }
 
+h1 {
+  font-size: 2rem;
+  color: #FFFFFF;
+  letter-spacing: 2px; }
+
 img {
   max-width: 100%; }
 
@@ -37,7 +42,7 @@ nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #26265E; }
+  background-color: #062a5c; }
   nav ul li {
     padding: 1rem;
     text-align: center;
@@ -49,13 +54,8 @@ nav ul {
       nav ul li a:hover {
         color: #8C8CBF; }
 
-h1 {
-  font-size: 2.5rem;
-  color: #ECECEC;
-  padding: 2rem; }
-
 .hero-image {
-  width: 100%;
+  height: 30vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,8 +68,7 @@ h1 {
   background-image: url("../images/solar.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 30vh; }
+  background-size: cover; }
   .hero-image .hero-text {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -151,7 +150,7 @@ h1 {
     text-align: center;
     padding: 0.5rem; }
   .card p {
-    color: #26265E;
+    color: #062a5c;
     padding: 0.5rem;
     text-align: center; }
   .card img {
@@ -160,7 +159,7 @@ h1 {
 footer {
   width: 100%;
   margin: auto;
-  background-color: #26265E; }
+  background-color: #062a5c; }
   footer .footer-top {
     width: 100%;
     display: -webkit-box;

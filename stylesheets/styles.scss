@@ -57,7 +57,7 @@ nav ul {
     list-style-type: none;
     a {
       text-decoration: none;
-      color: white;
+      color: $no-color;
       font-family: 'Lato';
       &:hover {
         color: $accent-color;
@@ -85,6 +85,7 @@ nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("https://pmarcheselli.github.io/florida-energy/images/solar.jpg") top left/cover no-repeat;
   h1 {
     display: flex;
 //    align-items: center;
@@ -94,10 +95,10 @@ nav ul {
     padding: 2rem;
 //    margin: 0;
   }
-  img {
-    display: flex;
-    width: 100%; 
-  }
+//  img {
+//    display: flex;
+//    width: 100%; 
+//  }
 }
 
 
@@ -182,7 +183,7 @@ footer {
       margin: 0.5rem;
       width: 50%;
       p {
-        color: white;
+        color: $no-color;
         display: flex;
         flex-flow: row-wrap;
       }
@@ -198,7 +199,7 @@ footer {
       padding: 1rem;
       width: 50%;
       label {
-        color: white;
+        color: $no-color;
       }
     }
   }
@@ -210,6 +211,6 @@ footer {
   justify-content: center;
   padding: 1rem;
   p {
-    color: white;
+    color: $no-color;
   }
 }

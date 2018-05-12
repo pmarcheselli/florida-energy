@@ -44,7 +44,8 @@ img {
   font-color: darkgrey;
   font-size: 0.85rem;
   border: none;
-  padding: 0.25rem; }
+  padding: 0.25rem;
+  border-radius: 8px; }
 
 .fa-search {
   color: darkgrey;
@@ -64,7 +65,7 @@ img {
           align-items: center;
   width: 75%; }
   .logo-container .logo {
-    margin: 0.75rem 0.75rem 0 2rem;
+    margin: 0.30rem 0 0.30rem 3.25rem;
     padding: 0.75rem 0; }
 
 nav {
@@ -105,7 +106,7 @@ nav ul {
         color: #75a2d8; }
 
 .hero-image {
-  height: 76vh;
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

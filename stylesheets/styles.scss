@@ -54,6 +54,7 @@ img {
   font-size: 0.85rem;
   border: none;
   padding: 0.25rem;
+  border-radius: 8px;
 }
 
 //TO DO: poisition inside search box
@@ -71,7 +72,7 @@ img {
   align-items: center;
   width: 75%;
   .logo {
-    margin: 0.75rem 0.75rem 0 2rem;
+    margin: 0.30rem 0 0.30rem 3.25rem;
     padding: 0.75rem 0;
   }
 }
@@ -101,7 +102,6 @@ nav ul {
       font-weight: bold;
       letter-spacing: 0.75px;
       &:hover {
-//        font-weight: bolder;
         color: $accent-color;
       }
     }
@@ -111,7 +111,7 @@ nav ul {
 // HERO
 
 .hero-image {
-  height: 76vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: flex-end;

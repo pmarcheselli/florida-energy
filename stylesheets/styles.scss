@@ -3,6 +3,7 @@
 $main-color: #26265E;
 $accent-color: #8C8CBF;
 $highlight-color: #ECECEC;
+$no-color: #FFFFFF;
 $main-font: 'Raleway', sans-serif;
 $secondary-font: 'Lato', sans-serif;
 
@@ -67,22 +68,38 @@ nav ul {
 
 // GLOBAL ARTICLE STYLES
 
-article {
+//article {
+//  width: 100%;
+//  background-color: $highlight-color;
+//  p, h2 {
+//    margin: 1rem;
+//    padding: .5rem;
+//    text-align: center;
+//  }
+//}
+
+// Hero
+
+.hero {
   width: 100%;
-  background-color: $highlight-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   h1 {
+    display: flex;
+//    align-items: center;
     text-align: center;
     font-size: 2rem;
-    color: $main-color;
+    color: $no-color;
     padding: 2rem;
-    margin: 0;
+//    margin: 0;
   }
-  p, h2 {
-    margin: 1rem;
-    padding: .5rem;
-    text-align: center;
+  img {
+    display: flex;
+    width: 100%; 
   }
 }
+
 
 // INTRO VIDEO & INFO SECTION
 
@@ -155,7 +172,7 @@ footer {
   .footer-top {
   width: 100%;
   display: flex;
-  flex-flow: row-wrap;
+  flex-flow: column;
   justify-content: center;
     .social-container {
       display: flex;
@@ -167,7 +184,11 @@ footer {
       p {
         color: white;
         display: flex;
-//        flex-flow: column;
+        flex-flow: row-wrap;
+      }
+      .social-icons {
+        display: flex;
+        flex-flow: row-wrap;
       }
     }
     .newsletter-container {

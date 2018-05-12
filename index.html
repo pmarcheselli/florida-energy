@@ -66,67 +66,50 @@
   </script>
   
   <header>
-  <!-- Header with section for logo & heading, and sticky nav bar --> 
-    <nav>
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="#">FESC RESEARCH</a></li>
-        <li><a href="#">EDUCATION</a></li>
-        <li><a href="#">OUTREACH</a></li>
-        <li><a href="#">USER FACILITIES</a></li>
-        <li><a href="energy-industry.html">ENERGY INDUSTRY</a></li>
-        <li><a href="#">ABOUT US</a></li>
-        <li><a href="contact-us.html">CONTACT US</a></li>
-      </ul>
-    </nav>
-    
-    <div class="logo-container">
-      <div class="logo">
-        <img src="images/new-logo.png" alt="Florida Energy Systems Consortium logo">
-      </div>
-      
+    <!-- Search Bar --> 
+    <section class="search-container">
       <div class="search-box">
-          <form>
-            <input type="text" name="search">
-            <button type="submit">Search</button>
-          </form>
-      </div>
-    </div>
-  
-  </header>
-  
-  <article>
-    <!-- Hero with background image and main heading -->
-    <div class="hero-image">
-      <div class="hero-text">
-<!--        <h1>Florida Energy Systems Consortium</h1>-->
-        <h1>FLORIDA ENERGY SYSTEMS CONSORTIUM</h1>
-      </div>  
-    </div>
-    
-    <!-- Intro section with video and news -->
-    <section class="intro">
-      <!-- FESC Intro Video -->
-      <div class="video">
-        <iframe src="https://www.youtube.com/embed/YA2ofbdd-G8" width="560" height="315" allowfullscreen="allowfullscreen"></iframe>
-      </div>
-      
-      <div class="info">
-        <h2>Bringing Energy Solutions to Florida, the Nation and the World</h2>
-
-        <p>The Florida Energy Systems Consortium (FESC) was created by the Florida State government to promote collaboration among the energy experts at its 12 supported universities to share energy-related expertise. The consortium assists the state in the development and implementation of an environmentally compatible, sustainable, and efficient energy strategic plan.</p>
-        
-        <div>
-          <!-- Facebook Share Button -->
-          <div class="fb-share-button" data-href="https://pmarcheselli.github.io/florida-energy/index.html" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpmarcheselli.github.io%2Fflorida-energy%2Findex.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
-
-          <!-- Twitter Share Button -->
-          <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Florida%20Energy%20Systems%20Consortium">Tweet</a>
-        </div>
+        <form>
+          <input type="text" name="search" placeholder="Search">
+            <span class="fa fa-search"></span>
+<!--            <i class="fa fa-search fa-1x" aria-hidden="true"></i>-->
+        </form>
       </div>
     </section>
     
-    <!-- Sections of cards with short description and links to each of 6 main web pages -->
+    <!--Nav Bar -->
+    <nav>
+      <!-- Logo -->
+      <div class="logo-container">
+        <div class="logo">
+          <a href="index.html"><img src="images/new-logo.png" alt="Florida Energy Systems Consortium logo"></a>
+        </div>
+      </div>
+      
+      <!-- Nav Links -->
+      <ul>
+        <li><a href="#">RESEARCH</a></li>
+        <li><a href="#">EDUCATION</a></li>
+        <li><a href="energy-industry.html">INDUSTRY</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="contact-us.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <article>
+    <!-- Hero with background image and main headings -->
+    <div class="hero-image">
+      <div class="hero-overlay">
+        <div class="hero-text">
+          <h1>Florida Energy Systems Consortium (FESC)</h1>
+          <h2>Bringing Energy Solutions to Florida, the Nation and the World</h2>
+          <p>Created by the Florida State government to promote collaboration among the energy experts at its 12 supported universities to share energy-related expertise. The consortium assists the state in the development and implementation of an environmentally compatible, sustainable, and efficient energy strategic plan.</p>
+        </div> 
+      </div>  
+    </div>
+    
+    <!-- News section with cards and links-->
     <section class="card-container">
       <div class="card">
         <img src="images/img.jpg" alt="temporary image">
@@ -151,19 +134,28 @@
         <h3><a href="#">USER FACILITIES</a></h3>
         <p>See the FESC universities and partner institutions.</p>
       </div>
+    </section>
     
-      <div class="card">
-        <img src="images/img.jpg" alt="temporary image">
-        <h3><a href="energy-industry.html">ENERGY INDUSTRY</a></h3>
-        <p>Private sector and other partners support and guide FESC's vision. Learn more about who they are.</p>
-      </div>
     
-      <div class="card">
-        <img src="images/img.jpg" alt="temporary image">
-        <h3><a href="#">ABOUT US</a></h3>
-        <p>Learn more about who we are and the adivsory board, faculty, leadership team, university leads, and oversight board that makes up FESC.</p>
+    <!-- More info section with video and news -->    
+    <section class="intro">
+      <!-- FESC Intro Video -->
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/YA2ofbdd-G8" width="560" height="315" allowfullscreen="allowfullscreen"></iframe>
       </div>
-    </section>   
+      
+      <div class="info">
+        <h2>Bringing Energy Solutions to Florida, the Nation and the World</h2>
+        
+        <div>
+          <!-- Facebook Share Button -->
+          <div class="fb-share-button" data-href="https://pmarcheselli.github.io/florida-energy/index.html" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpmarcheselli.github.io%2Fflorida-energy%2Findex.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+
+          <!-- Twitter Share Button -->
+          <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Florida%20Energy%20Systems%20Consortium">Tweet</a>
+        </div>
+      </div>
+    </section> 
   </article>
   
   <footer>

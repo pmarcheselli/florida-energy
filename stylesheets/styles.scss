@@ -96,6 +96,14 @@ article {
   }
   .info {
     padding: .5rem 0;
+    .fb-share-button { 
+        display: flex;
+        flex-flow: row wrap;
+      }
+      .twitter-share-button {
+        display: flex;
+        flex-flow: row wrap;
+      }
   }
 }
 
@@ -151,7 +159,7 @@ footer {
   justify-content: center;
     .social-container {
       display: flex;
-      flex-flow: row wrap;
+      flex-flow: column;
       justify-content: center;
       padding: 1rem;
       margin: 0.5rem;
@@ -159,15 +167,7 @@ footer {
       p {
         color: white;
         display: flex;
-        flex-flow: row wrap;
-      }
-      .fb-share-button { 
-        display: flex;
-        flex-flow: row wrap;
-      }
-      .twitter-share-button {
-        display: flex;
-        flex-flow: row wrap;
+//        flex-flow: column;
       }
     }
     .newsletter-container {

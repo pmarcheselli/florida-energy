@@ -20,6 +20,10 @@ body {
   font-family: $main-font;
 }
 
+article {
+  background-color: $highlight-color;
+}
+
 h1 {
   font-size: 1.75rem;
   font-family: $main-font;
@@ -155,6 +159,89 @@ nav ul {
   }
 }
 
+// CARDS
+
+.card-container {
+  display: flex;
+  flex-flow: wrap;
+  align-items: stretch;
+  justify-content: center;
+  margin: 3rem 4rem;
+}
+
+.card {
+  flex: 1;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  transition: 0.3s;
+  padding: 0.5rem;
+  margin: 0.75rem;
+  background-color: $no-color;
+  &:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  a {
+    color: $main-color;
+    font-size: 1.15rem;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-display: $main-font;
+    &:hover {
+      color: $accent-color;
+    }
+  }
+  h3 {
+    text-align: center;
+    padding: 0.5rem;
+  }
+  p {
+    color: $main-color;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  img {
+    justify-content: center;
+  }
+}
+
+// NEWS SECTION
+
+.news {
+  width: 100%;
+  background-color: $main-color;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  .news-info {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 1;
+    h2 {
+      color: $no-color;
+      font-size: 1.25rem;
+      font-weight: bolder;
+      padding-left: 4rem;
+      letter-spacing: 1px;
+    }
+    p { 
+      color: $highlight-color;
+      padding-left: 4rem;
+    }
+  }
+  .news-events {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 1;
+    h2 {
+      color: $no-color;
+      font-size: 1.25rem;
+      font-weight: bolder;
+      padding-left: 4rem;
+      letter-spacing: 1px;
+    }
+  }
+}
+
 // INTRO VIDEO & INFO SECTION
 
 .intro {
@@ -178,44 +265,6 @@ nav ul {
   }
 }
 
-// CARDS
-
-.card-container {
-  display: flex;
-  flex-flow: wrap;
-  align-items: stretch;
-  justify-content: center;
-  margin: 3rem 4rem;
-}
-
-.card {
-  flex: 1;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-  transition: 0.3s;
-  padding: 0.5rem;
-  margin: 0.75rem;
-  background-color: $accent-color;
-  &:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  a {
-    color: $highlight-color;
-    text-decoration: none;
-    font-display: 'Raleway';
-  }
-  h3 {
-    text-align: center;
-    padding: 0.5rem;
-  }
-  p {
-    color: $main-color;
-    padding: 0.5rem;
-    text-align: center;
-  }
-  img {
-    justify-content: center;
-  }
-}
 
 // FOOTER
 

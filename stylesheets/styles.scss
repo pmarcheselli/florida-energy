@@ -271,7 +271,7 @@ nav ul {
   }
 }
 
-// INTRO VIDEO & INFO SECTION
+// FEATURED SECTION & VIDEO
 
 .featured {
   display: flex;
@@ -287,6 +287,7 @@ nav ul {
     margin: 2rem 4rem 2rem 2rem;
     p {
       color: $main-color;
+      line-height: 18px;
     }
     .social-share {
       display: flex;
@@ -319,16 +320,15 @@ nav ul {
     justify-content: center;
     h3 {
     color: $accent-color;
-      
     font-size: 1rem;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
     }
   }
 }
 
 .newsletter-container input[type=email] {
   font-family: $secondary-font;
-  font-color: darkgrey;
+  color: darkgrey;
   font-size: 0.85rem;
   border: none;
   padding: 0.25rem 12rem 0.25rem 0.25rem;
@@ -337,9 +337,11 @@ nav ul {
 .submit-button {
   border: none;
   margin-left: -50px;
-  color: $accent-color;
-//  font-color: $no-color;
-  padding: 0.25rem 2rem;
+  background-color: $accent-color;
+  color: $highlight-color;
+  padding: 0.30rem 2rem;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
 }
 
 // FOOTER

@@ -310,7 +310,8 @@ nav ul {
     padding: .5rem 0;
     margin: 2rem 4rem 2rem 2rem; }
     .featured article p {
-      color: #062a5c; }
+      color: #062a5c;
+      line-height: 18px; }
     .featured article .social-share {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -352,11 +353,11 @@ nav ul {
     .newsletter-container .sign-up h3 {
       color: #75a2d8;
       font-size: 1rem;
-      padding: 0.5rem; }
+      padding: 0.5rem 1rem 0.5rem 0.5rem; }
 
 .newsletter-container input[type=email] {
   font-family: "Lato", sans-serif;
-  font-color: darkgrey;
+  color: darkgrey;
   font-size: 0.85rem;
   border: none;
   padding: 0.25rem 12rem 0.25rem 0.25rem; }
@@ -364,8 +365,11 @@ nav ul {
 .submit-button {
   border: none;
   margin-left: -50px;
-  color: #75a2d8;
-  padding: 0.25rem 2rem; }
+  background-color: #75a2d8;
+  color: #ECECEC;
+  padding: 0.30rem 2rem;
+  font-size: 0.75rem;
+  letter-spacing: 1px; }
 
 footer {
   background-color: #FFFFFF; }

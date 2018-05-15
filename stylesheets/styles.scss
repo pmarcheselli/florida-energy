@@ -45,7 +45,7 @@ img {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0.5rem 4rem 0.5rem 0;
+    padding: 0.5rem 6rem 0.5rem 0;
     form {
       border-radius: 5px;
     }
@@ -61,7 +61,7 @@ img {
   border-radius: 8px;
 }
 
-//TO DO: poisition inside search box
+//TO DO: position inside search box
 .fa-search {
 //  position: absolute;
   color: darkgrey;
@@ -207,7 +207,6 @@ nav ul {
 // NEWS SECTION
 
 .news {
-  width: 100%;
   background-color: $main-color;
   display: flex;
   flex-direction: row;
@@ -215,77 +214,155 @@ nav ul {
   .news-info {
     display: flex;
     flex-direction: column;
-    flex-basis: 1;
+    flex-basis: 50%;
+    background-color: $main-color;
+    margin: 3rem 0;
     h2 {
-      color: $no-color;
-      font-size: 1.25rem;
+      color: $highlight-color;
+      font-size: 1.5rem;
       font-weight: bolder;
       padding-left: 4rem;
       letter-spacing: 1px;
     }
     p { 
-      color: $highlight-color;
       padding-left: 4rem;
+      margin-top: 0.75rem;
+      color: $no-color;
+      line-height: 18px;
     }
   }
   .news-events {
     display: flex;
     flex-direction: column;
-    flex-basis: 1;
+    flex-basis: 50%;
+    background-color: $main-color;
+    padding-left: 4rem;
+    margin: 3rem 0;
     h2 {
-      color: $no-color;
-      font-size: 1.25rem;
+      color: $highlight-color;
+      font-size: 1.5rem;
       font-weight: bolder;
-      padding-left: 4rem;
       letter-spacing: 1px;
+    }
+    .events-container {
+      width: 85%;
+      .date-box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: $highlight-color;
+        margin: 0.25rem 0 0.45rem 0;
+        &:first-child {
+          margin-top: 0.75rem;
+          }
+        .date {
+          width: 15%;
+          background-color: $accent-color;
+          color: $no-color;
+          font-size: 1rem;
+          padding: 0.5rem;
+          }
+        p {
+          font-size: 1rem;
+          padding: 0.5rem 0 0.5rem 2rem;
+        }
+      } 
     }
   }
 }
 
 // INTRO VIDEO & INFO SECTION
 
-.intro {
-  width: 100%;
+.featured {
   display: flex;
-  flex-flow: row-wrap;
+  flex-direction: row;
   align-items: center;
+  background-color: $highlight-color;
+  padding: 2rem 0;
   .video {
-    margin: 2rem;
+    margin: 2rem 0.5rem 2rem 4rem;
   }
-  .info {
+  article {
     padding: .5rem 0;
-    .fb-share-button { 
-        display: flex;
-        flex-flow: row wrap;
+    margin: 2rem 4rem 2rem 2rem;
+    p {
+      color: $main-color;
+    }
+    .social-share {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-top: 0.5rem;
+      .fb-share-button { 
+        padding: 0 1rem 0 0;
       }
-      .twitter-share-button {
-        display: flex;
-        flex-flow: row wrap;
-      }
+    }
   }
 }
 
+// NEWSLETTER SIGNUP
+
+.newsletter-container {
+  background-color: $main-color;
+  text-align: center;
+  padding: 3rem 0;
+  h2 {
+    color: $no-color;
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+    letter-spacing: 1px;
+  }
+  .sign-up {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    h3 {
+    color: $accent-color;
+      
+    font-size: 1rem;
+    padding: 0.5rem;
+    }
+  }
+}
+
+.newsletter-container input[type=email] {
+  font-family: $secondary-font;
+  font-color: darkgrey;
+  font-size: 0.85rem;
+  border: none;
+  padding: 0.25rem 12rem 0.25rem 0.25rem;
+}
+
+.submit-button {
+  border: none;
+  margin-left: -50px;
+  color: $accent-color;
+//  font-color: $no-color;
+  padding: 0.25rem 2rem;
+}
 
 // FOOTER
 
 footer {
-  width: 100%;
-  margin: auto;
-  background-color: $main-color;
+//  width: 100%;
+//  margin: auto;
+  background-color: $no-color;
   .footer-top {
-  width: 100%;
+//  width: 100%;
   display: flex;
   flex-flow: row-wrap;
   justify-content: center;
-    .social-container {
+  background-color: $no-color;
+    .social {
       display: flex;
-      flex-flow: row-wrap;
+      flex-direction: row;
       justify-content: center;
       padding: 1rem;
       margin: 0.5rem;
       width: 50%;
-      p {
-        color: $no-color;
+      h3 {
+        color: $main-color;
         display: flex;
         flex-flow: column;
       }
@@ -296,25 +373,23 @@ footer {
         padding: 0.25rem;
       }
     }
-    .newsletter-container {
-      align-self: center;
+    .connect {
+      display: flex;
+      flex-direction: row;
       justify-content: center;
-      margin: 0.5rem;
-      padding: 1rem;
-      width: 50%;
-      label {
-        color: $no-color;
+      h3 {
+        color: $main-color;
       }
     }
   }
 }
 
 .copyright {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
+  background-color: $highlight-color;
+  text-align: center;
+  padding: 0.75rem;
   p {
-    color: $no-color;
+    font-size: 0.75rem;
+    color: $main-color;
   }
 }

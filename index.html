@@ -99,7 +99,7 @@
   
   <article>
     <!-- Hero with background image and main headings -->
-    <div class="hero-image">
+    <section class="hero-image">
       <div class="hero-overlay">
         <div class="hero-text">
           <h1>Florida Energy Systems Consortium (FESC)</h1>
@@ -107,7 +107,7 @@
           <p>Created by the Florida State government to promote collaboration among the energy experts at its 12 supported universities to share energy-related expertise. The consortium assists the state in the development and implementation of an environmentally compatible, sustainable, and efficient energy strategic plan.</p>
         </div> 
       </div>  
-    </div>
+    </section>
     
     <!-- Cards with links-->
     <section class="card-container">
@@ -138,68 +138,92 @@
     
     <!-- News section -->
     <section class="news">
-      <div class="news-info">
-        <h2>News</h2>
+      <article class="news-info">
+        <h2>NEWS</h2>
         <p>Created by the Florida State government to promote collaboration among the energy experts at its 12 supported universities to share energy-related expertise. The consortium assists the state in the development and implementation</p>
-      </div>
+      </article>
       
-      <div class="new-events">
-        <h2>Events</h2>
-        <ul>Mar 1st</ul>
-        <ul>Apr 21st</ul>
-        <ul>May 17th</ul>
-        <ul>July 13th</ul>
-      </div>
-    
-    
+      <article class="news-events">
+        <h2>EVENTS</h2>
+        <section class="events-container">
+          <div class="date-box">
+            <div class="date">Mar 1st</div>
+            <p>Lorem ipsum adfadjfhadjh adfasd</p>
+          </div>
+            
+          <div class="date-box">
+            <div class="date">Apr 2nd</div>
+            <p>Lorem ipsum adfadjfhadjh adfasd</p>
+          </div>
+          
+          <div class="date-box">
+            <div class="date">May 17th</div>
+            <p>Lorem ipsum adfadjfhadjh adfasd</p>
+          </div>
+          
+          <div class="date-box">
+            <div class="date">Sep 13th</div>
+            <p>Lorem ipsum adfadjfhadjh adfasd</p>
+          </div>
+        </section>
+      </article>
     </section>
     
     
-    
-    <!-- More info section with video and news -->    
-    <section class="intro">
+    <!-- Featured section with video and article -->    
+    <section class="featured">
       <!-- FESC Intro Video -->
       <div class="video">
         <iframe src="https://www.youtube.com/embed/YA2ofbdd-G8" width="560" height="315" allowfullscreen="allowfullscreen"></iframe>
       </div>
       
-      <div class="info">
-        <h2>Bringing Energy Solutions to Florida, the Nation and the World</h2>
+      <article>
+        <p>Bringing Energy Solutions to Florida, the Nation and the World</p>
         
-        <div>
+        <div class="social-share">
           <!-- Facebook Share Button -->
           <div class="fb-share-button" data-href="https://pmarcheselli.github.io/florida-energy/index.html" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpmarcheselli.github.io%2Fflorida-energy%2Findex.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
 
           <!-- Twitter Share Button -->
           <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Florida%20Energy%20Systems%20Consortium">Tweet</a>
         </div>
-      </div>
+      </article>
     </section> 
+    
+    <!-- Newsletter sign up -->
+      <section class="newsletter-container">
+        <h2>SIGN UP FOR OUR NEWSLETTER</h2>
+        <div class="sign-up">
+          <h3>Sign up to receive FESC's updates and more!</h3>
+          <form>
+            <label>
+              <input type="email" name="email" placeholder="Enter your email address">
+              <input type="submit" value="Submit" class="submit-button">
+            </label>
+          </form>
+        </div>  
+      </section>
+  <!-- End article -->
   </article>
   
   <footer>
     <section class="footer-top">
-      <!--Social Media Links -->
-      <section class="social-container">
-        <p>Connect with Us!</p>
-        
+      
+      <!--Social Media Section -->
+      <section class="social">
+        <p>Follow Us!</p>
         <div class="social-icons">
           <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
           <a href="https://twitter.com" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
           <a href="https://linkedin.com" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
         </div>
       </section>
-
-      <!--Form for newsletter signup -->
-      <section class="newsletter-container">
-        <form>
-          <label>
-            Sign up for our newsletter:
-            <input type="email" name="email" value="Enter your email">
-          </label>
-          <input type="submit" value="Submit">
-        </form>
-      </section>
+      
+      <!--Connect Section -->
+      <section class="connect">
+        <h3>Connect with Us!</h3>
+      </section>  
+        
     </section>
     
     <section class="copyright">

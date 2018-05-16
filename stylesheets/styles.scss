@@ -354,14 +354,38 @@ footer {
   justify-content: center;
   align-items: flex-start;
   background-color: $no-color;
+  margin: 1rem 4rem;
+    .find {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      h3 {
+        display: flex; 
+        color: $main-color;
+        font-size: 1.25rem;
+        font-weight: bolder;
+        padding: 1rem 0 0.5rem 0;
+      }
+      .find-bold {
+        color: $accent-color;
+        font-weight: bolder;
+        font-size: 0.85rem;
+        padding: 0.25rem 0 0.25rem 0;
+      }
+      p {
+        color: $main-color;
+        font-weight: bolder;
+        font-size: 0.95rem;
+        line-height: 18px;
+      }
+    }
     .social {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+//      justify-content: center;
       align-items: center;
       padding: 1rem;
-      margin: 0.5rem;
-      width: 50%;
+      width: 40%;
       h3 {
         display: flex; 
         color: $main-color;
@@ -406,7 +430,7 @@ footer {
           color: $main-color;
           font-weight: bolder;
           font-size: 1rem;
-          padding-bottom: 0.5rem;
+          padding-bottom: 0.75rem;
         }
       }
     }

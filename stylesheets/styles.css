@@ -387,7 +387,35 @@ footer {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    background-color: #FFFFFF; }
+    background-color: #FFFFFF;
+    margin: 1rem 4rem; }
+    footer .footer-top .find {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      padding: 1rem; }
+      footer .footer-top .find h3 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        color: #062a5c;
+        font-size: 1.25rem;
+        font-weight: bolder;
+        padding: 1rem 0 0.5rem 0; }
+      footer .footer-top .find .find-bold {
+        color: #75a2d8;
+        font-weight: bolder;
+        font-size: 0.85rem;
+        padding: 0.25rem 0 0.25rem 0; }
+      footer .footer-top .find p {
+        color: #062a5c;
+        font-weight: bolder;
+        font-size: 0.95rem;
+        line-height: 18px; }
     footer .footer-top .social {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -396,15 +424,11 @@ footer {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
       padding: 1rem;
-      margin: 0.5rem;
-      width: 50%; }
+      width: 40%; }
       footer .footer-top .social h3 {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -461,7 +485,7 @@ footer {
           color: #062a5c;
           font-weight: bolder;
           font-size: 1rem;
-          padding-bottom: 0.5rem; }
+          padding-bottom: 0.75rem; }
 
 .copyright {
   background-color: #ECECEC;

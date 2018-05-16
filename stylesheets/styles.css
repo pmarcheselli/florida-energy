@@ -201,11 +201,14 @@ nav ul {
       color: #75a2d8; }
   .card h3 {
     text-align: center;
-    padding: 0.5rem; }
+    padding: 0.5rem;
+    font-weight: bolder;
+    color: #062a5c; }
   .card p {
     color: #062a5c;
     padding: 0.5rem;
-    text-align: center; }
+    text-align: center;
+    font-size: 0.95rem; }
   .card img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;

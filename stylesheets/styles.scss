@@ -347,40 +347,67 @@ nav ul {
 // FOOTER
 
 footer {
-//  width: 100%;
-//  margin: auto;
   background-color: $no-color;
   .footer-top {
-//  width: 100%;
   display: flex;
-  flex-flow: row-wrap;
+  flex-direction: row;
   justify-content: center;
+  align-items: flex-start;
   background-color: $no-color;
     .social {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: center;
+      align-items: center;
       padding: 1rem;
       margin: 0.5rem;
       width: 50%;
       h3 {
+        display: flex; 
         color: $main-color;
-        display: flex;
-        flex-flow: column;
+        font-size: 1.25rem;
+        font-weight: bolder;
+        padding: 1rem 0 0.5rem 0;
       }
       .social-icons {
         display: flex;
-        flex-flow: row-wrap;
+        flex-direction: row;
         justify-content: center;
         padding: 0.25rem;
+        a {
+          color: $main-color;
+          padding: 0.25rem;
+          &:hover {
+            color: $accent-color;
+          }
+        }
       }
     }
     .connect {
       display: flex;
-      flex-direction: row;
-      justify-content: center;
+      flex-direction: column;
+      padding: 1rem;
       h3 {
         color: $main-color;
+        font-size: 1.25rem;
+        font-weight: bolder;
+        padding: 1rem 0 0.5rem 0;
+      }
+      .connect-info {
+        display: flex;
+        flex-direction: column;
+        .connect-bold {
+          color: $accent-color;
+          font-weight: bolder;
+          font-size: 0.85rem;
+          padding: 0.25rem 0 0.25rem 0;
+        }
+        p {
+          color: $main-color;
+          font-weight: bolder;
+          font-size: 1rem;
+          padding-bottom: 0.5rem;
+        }
       }
     }
   }

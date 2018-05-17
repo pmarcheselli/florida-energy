@@ -337,13 +337,14 @@ nav ul {
   flex-direction: row;
   align-items: center;
   background-color: $highlight-color;
-  padding: 2rem 0;
+  margin: 3rem 4rem;
   .video {
-    margin: 2rem 0.5rem 2rem 4rem;
+//    margin: 0 0.5rem 0 0;
   }
   article {
-    padding: .5rem 0;
-    margin: 1rem 4rem 2rem 2rem;
+//    padding: .5rem 0;
+//    margin: 1rem 4rem 2rem 2rem;
+    padding: 0 0 0 2.5rem;
     h2 {
       color: $main-color;
       font-size: 1.5rem;
@@ -374,6 +375,22 @@ nav ul {
     }
   }
 }
+
+@media screen and (max-width: 690px) {
+  .mission {
+    flex-direction: column;
+    margin: 1.5rem 1rem;
+    .video {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    article {
+      padding: 1rem 1rem;
+    }
+  }
+}
+
 
 // NEWSLETTER SIGNUP
 

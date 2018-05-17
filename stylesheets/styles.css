@@ -345,12 +345,9 @@ nav ul {
       -ms-flex-align: center;
           align-items: center;
   background-color: #ECECEC;
-  padding: 2rem 0; }
-  .mission .video {
-    margin: 2rem 0.5rem 2rem 4rem; }
+  margin: 3rem 4rem; }
   .mission article {
-    padding: .5rem 0;
-    margin: 1rem 4rem 2rem 2rem; }
+    padding: 0 0 0 2.5rem; }
     .mission article h2 {
       color: #062a5c;
       font-size: 1.5rem;
@@ -382,6 +379,23 @@ nav ul {
       .mission article .social-share .fb-share-button {
         padding: 0 0.5rem 0 0; }
 
+@media screen and (max-width: 690px) {
+  .mission {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 1.5rem 1rem; }
+    .mission .video {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    .mission article {
+      padding: 1rem 1rem; } }
 .newsletter-container {
   background-color: #062a5c;
   text-align: center;

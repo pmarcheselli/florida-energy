@@ -75,7 +75,7 @@ img {
   align-items: center;
   width: 75%;
   .logo {
-    margin: 0.30rem 0 0.30rem 3.25rem;
+    margin: 0.30rem 0;
     padding: 0.75rem 0;
   }
 }
@@ -85,6 +85,7 @@ nav {
   display: flex;
   flex-flow: row-wrap;
   align-items: center;
+  margin: 0 4rem 0 3.25rem;
 }
 
 nav ul {
@@ -95,9 +96,6 @@ nav ul {
     padding: 1.5rem;
     text-align: center;
     list-style-type: none;
-    &:last-child {
-      margin-right: 4rem;
-    }
     a {
       text-decoration: none;
       color: $main-color;
@@ -108,6 +106,17 @@ nav ul {
         color: $accent-color;
       }
     }
+  }
+}
+
+@media screen and (max-width: 690px) {
+  nav, nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .logo {
+    width: 100%;
   }
 }
 
@@ -158,6 +167,25 @@ nav ul {
   }
 }
 
+@media screen and (max-width: 690px) {
+  .hero-image {
+    height: 60vh;
+    .hero-overlay {
+      height: 35vh;
+      h1 {
+       font-size: 1rem; 
+      }
+      h2 {
+       font-size: 0.75rem;  
+      }
+      p {
+        font-size: 0.5rem;
+      }
+    }
+  }
+}
+
+
 // CARDS
 
 .card-container {
@@ -205,6 +233,18 @@ nav ul {
     justify-content: center;
   }
 }
+
+@media screen and (max-width: 690px) {
+  .card {
+    flex-basis: initial;
+    img {
+      width: 100%;
+    }
+  }
+  
+}
+
+
 
 // NEWS SECTION
 

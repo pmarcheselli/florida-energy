@@ -519,6 +519,51 @@ footer {
   letter-spacing: 1px;
   padding: 2rem 0; }
 
+.industry-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  .industry-grid .container {
+    position: relative;
+    width: 50%; }
+    .industry-grid .container .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #008CBA;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      -webkit-transform: scale(0);
+      -webkit-transition: .3s ease;
+      transition: .3s ease; }
+    .industry-grid .container p {
+      color: #FFFFFF;
+      font-size: 1.25rem;
+      letter-spacing: 1px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center; }
+
+.container:hover .overlay {
+  -webkit-transform: scale(1);
+          transform: scale(1); }
+
+.industry-text {
+  color: #062a5c;
+  font-size: 1rem;
+  line-height: 20px;
+  padding: 2rem 4rem 3rem 4rem; }
+
 .contact-header {
   background-color: #062a5c;
   text-align: center;

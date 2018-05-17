@@ -467,6 +467,7 @@ footer {
 
 //////////////// ENERGY-INDUSTRY PAGE ////////////////
 
+
 .industry-header {
   background-color: $main-color;
   text-align: center;
@@ -475,6 +476,50 @@ footer {
   letter-spacing: 1px;
   padding: 2rem 0;
 }
+
+.industry-grid {
+  display: flex;
+  flex-direction: row;
+  .container {
+    position: relative;
+    width: 50%;
+    .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transform:scale(0);
+    transition: .3s ease;
+    }
+    p {
+      color: $no-color;
+      font-size: 1.25rem;
+      letter-spacing: 1px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  }
+}
+
+.container:hover .overlay {
+  transform: scale(1)
+}
+
+.industry-text {
+  color: $main-color;
+  font-size: 1rem;
+  line-height: 20px;
+  padding: 2rem 4rem 3rem 4rem;  
+}
+
 
 //////////////// CONTACT PAGE ////////////////
 

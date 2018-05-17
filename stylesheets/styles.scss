@@ -537,7 +537,7 @@ footer {
   flex-direction: row;
   align-items: flex-start;
   background-color: $highlight-color;
-  padding: 3rem 4rem;
+  padding: 2rem 4rem 3rem 4rem;
   .contact-left {
     display: flex;
     flex-direction: column;
@@ -546,7 +546,7 @@ footer {
       color: $accent-color;
       font-size: 1.25rem;
       font-weight: bolder;
-      padding-bottom: 0.75rem;
+      padding-bottom: 0.5rem;
       letter-spacing: 1px;
     }
     .contact-bold {
@@ -565,7 +565,6 @@ footer {
     address {
       color: $main-color;
       font-size: 0.95rem;
-      font-weight: bolder;
       line-height: 22px;
       padding-bottom: 0.25rem;
       i {

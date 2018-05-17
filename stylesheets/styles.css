@@ -584,7 +584,7 @@ footer {
       -ms-flex-align: start;
           align-items: flex-start;
   background-color: #ECECEC;
-  padding: 3rem 4rem; }
+  padding: 2rem 4rem 3rem 4rem; }
   .contact-container .contact-left {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -598,7 +598,7 @@ footer {
       color: #75a2d8;
       font-size: 1.25rem;
       font-weight: bolder;
-      padding-bottom: 0.75rem;
+      padding-bottom: 0.5rem;
       letter-spacing: 1px; }
     .contact-container .contact-left .contact-bold {
       color: #062a5c;
@@ -613,7 +613,6 @@ footer {
     .contact-container .contact-left address {
       color: #062a5c;
       font-size: 0.95rem;
-      font-weight: bolder;
       line-height: 22px;
       padding-bottom: 0.25rem; }
       .contact-container .contact-left address i {

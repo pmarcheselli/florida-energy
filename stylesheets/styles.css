@@ -440,6 +440,37 @@ nav ul {
   font-size: 0.75rem;
   letter-spacing: 1px; }
 
+@media screen and (max-width: 690px) {
+  .newsletter-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 2rem 1rem; }
+    .newsletter-container .sign-up {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+
+  .newsletter-container input[type=email] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0.5rem 0; } }
 footer {
   background-color: #FFFFFF; }
   footer .footer-top {
@@ -564,6 +595,17 @@ footer {
     font-size: 0.75rem;
     color: #062a5c; }
 
+@media screen and (max-width: 690px) {
+  .footer-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; } }
 .industry-header {
   background-color: #062a5c;
   text-align: center;

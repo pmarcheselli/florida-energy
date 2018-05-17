@@ -435,6 +435,25 @@ nav ul {
   letter-spacing: 1px;
 }
 
+@media screen and (max-width: 690px) {
+  .newsletter-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    .sign-up {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .newsletter-container input[type=email] {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0;
+  }
+}
+
+
 // FOOTER
 
 footer {
@@ -535,6 +554,14 @@ footer {
   p {
     font-size: 0.75rem;
     color: $main-color;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
   }
 }
 

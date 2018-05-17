@@ -558,10 +558,15 @@ footer {
 }
 
 @media screen and (max-width: 690px) {
-  .footer-top {
+  footer, .footer-top {
     display: flex;
     flex-direction: column;
-    flex-basis: 100%;
+//    flex-basis: 100%;
+    .find, .social, .connect {
+      display: flex;
+      flex-direction: column;
+//      flex-basis: 100%;
+    }
   }
 }
 
@@ -689,6 +694,24 @@ footer {
     flex-direction: column; 
     iframe {
       margin: 2rem 0;
+    }
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 3rem;
+    img {
+      width: 100%;
+    }
+    .contact-right {
+      padding: 0;
+      iframe {
+        margin: 0 0 1rem 0;
+        width: 100%;
+      }
     }
   }
 }

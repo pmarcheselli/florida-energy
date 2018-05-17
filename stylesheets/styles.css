@@ -511,11 +511,20 @@ footer {
     font-size: 0.75rem;
     color: #062a5c; }
 
+.industry-header {
+  background-color: #062a5c;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  padding: 2rem 0; }
+
 .contact-header {
   background-color: #062a5c;
   text-align: center;
   font-size: 1.5rem;
   color: #FFFFFF;
+  letter-spacing: 1px;
   padding: 2rem 0; }
 
 .contact-container {

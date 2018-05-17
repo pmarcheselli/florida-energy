@@ -27,7 +27,6 @@ article {
 h1 {
   font-size: 1.75rem;
   font-family: $main-font;
-//  letter-spacing: 2px;
 }
 
 img {
@@ -465,6 +464,18 @@ footer {
   }
 }
 
+
+//////////////// ENERGY-INDUSTRY PAGE ////////////////
+
+.industry-header {
+  background-color: $main-color;
+  text-align: center;
+  font-size: 1.5rem; 
+  color: $no-color;
+  letter-spacing: 1px;
+  padding: 2rem 0;
+}
+
 //////////////// CONTACT PAGE ////////////////
 
 .contact-header {
@@ -472,6 +483,7 @@ footer {
   text-align: center;
   font-size: 1.5rem; 
   color: $no-color;
+  letter-spacing: 1px;
   padding: 2rem 0;
 }
 

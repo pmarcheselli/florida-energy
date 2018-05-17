@@ -626,7 +626,20 @@ footer {
   padding: 2rem 4rem 3rem 4rem;  
 }
 
-
+@media screen and (max-width: 690px) {
+  .industry-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .container {
+      width: 100%;
+    }
+  }
+  .industry-text {
+    padding: 2rem;
+  }
+}
+  
 //////////////// CONTACT PAGE ////////////////
 
 .contact-header {

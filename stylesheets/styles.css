@@ -665,6 +665,23 @@ footer {
   line-height: 20px;
   padding: 2rem 4rem 3rem 4rem; }
 
+@media screen and (max-width: 690px) {
+  .industry-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .industry-grid .container {
+      width: 100%; }
+
+  .industry-text {
+    padding: 2rem; } }
 .contact-header {
   background-color: #062a5c;
   text-align: center;

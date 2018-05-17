@@ -294,7 +294,7 @@ nav ul {
           font-size: 1rem;
           padding: 0.5rem 0 0.5rem 2rem; }
 
-.featured {
+.mission {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -307,15 +307,28 @@ nav ul {
           align-items: center;
   background-color: #ECECEC;
   padding: 2rem 0; }
-  .featured .video {
+  .mission .video {
     margin: 2rem 0.5rem 2rem 4rem; }
-  .featured article {
+  .mission article {
     padding: .5rem 0;
-    margin: 2rem 4rem 2rem 2rem; }
-    .featured article p {
+    margin: 1rem 4rem 2rem 2rem; }
+    .mission article h2 {
       color: #062a5c;
-      line-height: 18px; }
-    .featured article .social-share {
+      font-size: 1.5rem;
+      font-weight: bolder;
+      letter-spacing: 1px; }
+    .mission article .mission-main {
+      margin-top: 0.75rem;
+      color: #062a5c;
+      font-size: 0.95rem;
+      line-height: 18px;
+      padding-bottom: 2px; }
+    .mission article p {
+      color: #062a5c;
+      font-size: 0.85rem;
+      line-height: 16px;
+      padding: 3px 0; }
+    .mission article .social-share {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -327,7 +340,7 @@ nav ul {
           -ms-flex-align: center;
               align-items: center;
       padding-top: 0.5rem; }
-      .featured article .social-share .fb-share-button {
+      .mission article .social-share .fb-share-button {
         padding: 0 1rem 0 0; }
 
 .newsletter-container {

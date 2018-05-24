@@ -57,6 +57,7 @@ function drawChart() {
 
         var options = {
           title: 'Renewable Energy Production in Florida',
+          'colors': ['darkgrey'],
           hAxis: {title: 'Year',  titleTextStyle: {color: '#333'}},
           vAxis: {minValue: 0}
         };
@@ -69,8 +70,10 @@ function drawChart() {
 google.charts.setOnLoadCallback(drawChart2);
 
 function drawChart2() {
-        var data = google.visualization.arrayToDataTable([
-          ['Year', 'Billion BTU'],
+      var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Year');
+        data.addColumn('number', 'Billion BTU');
+        data.addRows([
           ['1960',  57344],
           ['1961',  62705],
           ['1962',  71216],
@@ -131,11 +134,22 @@ function drawChart2() {
         ]);
     
 
-        var options = {
-          title: 'Electricity Total Consumption in Florida',
-          hAxis: {title: 'Year',  titleTextStyle: {color: '#333'}},
-          vAxis: {minValue: 0}
-        };
+
+
+      var options = {'title':'Electricity Consumption in Florida', 
+                 'legend': 'none',
+                 'colors': ['#75a2d8'],
+                  textStyle: {
+                    fontSize: 16,
+                  },
+                 hAxis: {
+                   title: 'Year'
+                 },
+                 vAxis: {
+                   title: 'Billion BTU'
+                 },
+                 height: 500,
+                };
 
 
         var chart = new google.visualization.AreaChart(document.getElementById('line-chart2'));

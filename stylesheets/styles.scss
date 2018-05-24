@@ -576,6 +576,19 @@ footer {
   }
 }
 
+//////////////// RESEARCH PAGE ////////////////
+
+.chart-containter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 4rem 0;
+  .chart {
+    padding: 1rem;
+  }
+}
+
+
 
 //////////////// ENERGY-INDUSTRY PAGE ////////////////
 

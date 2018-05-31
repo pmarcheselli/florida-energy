@@ -18,6 +18,14 @@ h1 {
 img {
   max-width: 100%; }
 
+.inner-header {
+  background-color: #062a5c;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  padding: 2rem 0; }
+
 .search-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -638,14 +646,6 @@ footer {
   .chart-containter .chart {
     padding: 1rem; }
 
-.industry-header {
-  background-color: #062a5c;
-  text-align: center;
-  font-size: 1.5rem;
-  color: #FFFFFF;
-  letter-spacing: 1px;
-  padding: 2rem 0; }
-
 .industry-grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -708,14 +708,6 @@ footer {
 
   .industry-text {
     padding: 2rem; } }
-.contact-header {
-  background-color: #062a5c;
-  text-align: center;
-  font-size: 1.5rem;
-  color: #FFFFFF;
-  letter-spacing: 1px;
-  padding: 2rem 0; }
-
 .contact-container {
   display: -webkit-box;
   display: -ms-flexbox;

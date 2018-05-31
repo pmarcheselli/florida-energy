@@ -34,6 +34,14 @@ img {
   max-width: 100%;
 }
 
+.inner-header {
+  background-color: $main-color;
+  text-align: center;
+  font-size: 1.5rem; 
+  color: $no-color;
+  letter-spacing: 1px;
+  padding: 2rem 0;
+}
 
 // SEARCH BAR
 
@@ -576,7 +584,10 @@ footer {
   }
 }
 
+
+
 //////////////// RESEARCH PAGE ////////////////
+
 
 .chart-containter {
   display: flex;
@@ -592,15 +603,6 @@ footer {
 
 //////////////// ENERGY-INDUSTRY PAGE ////////////////
 
-
-.industry-header {
-  background-color: $main-color;
-  text-align: center;
-  font-size: 1.5rem; 
-  color: $no-color;
-  letter-spacing: 1px;
-  padding: 2rem 0;
-}
 
 .industry-grid {
   display: flex;
@@ -661,14 +663,6 @@ footer {
   
 //////////////// CONTACT PAGE ////////////////
 
-.contact-header {
-  background-color: $main-color;
-  text-align: center;
-  font-size: 1.5rem; 
-  color: $no-color;
-  letter-spacing: 1px;
-  padding: 2rem 0;
-}
 
 .contact-container {
   display: flex;

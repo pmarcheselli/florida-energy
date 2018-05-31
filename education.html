@@ -51,6 +51,9 @@
   <!-- Font Awesome -->
   <script src="https://use.fontawesome.com/60711a4189.js"></script>
   
+  <!-- Vue Script -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="scripts/component.js"></script> 
 </head>
 
 <body>
@@ -65,92 +68,105 @@
   }(document, 'script', 'facebook-jssdk'));
   </script>
   
-  <header>
-    <!-- Search Bar --> 
-    <section class="search-container">
-      <div class="search-box">
-        <form>
-          <input type="text" name="search" placeholder="Search">
-            <span class="fa fa-search"></span>
-<!--            <i class="fa fa-search fa-1x" aria-hidden="true"></i>-->
-        </form>
-      </div>
-    </section>
-    
-    <!--Nav Bar -->
-    <nav>
-      <!-- Logo -->
-      <div class="logo-container">
-        <div class="logo">
-          <a href="index.html"><img src="images/new-logo-285w.png" alt="Florida Energy Systems Consortium logo"></a>
-        </div>
-      </div>
-      
-      <!-- Nav Links -->
-      <ul>
-        <li><a href="research.html">RESEARCH</a></li>
-        <li><a href="education.html">EDUCATION</a></li>
-        <li><a href="energy-industry.html">INDUSTRY</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="contact-us.html">CONTACT</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <article>
-    <!-- Main Research section -->
-    <section>
-      <h2 class="inner-header">EDUCATION</h2>
-        
-      <p class="industry-text">Florida’s State and Community Colleges offer an opportunity to develop a trained energy workforce through programming for two-year or four-year degrees.<br>
-        
-      FESC is working with the Florida Community College system as well as with the Florida Advanced Technological Education Center (FLATE), a National Science Foundation (NSF)-funded Regional Center that coordinates the design of industry-specific training programs for technicians. Complementary to FESC’s education goals, FLATE’s mission is to create a relevant statewide educational delivery system by supporting technical programs, curriculum development, best practices, student involvement, and outreach activities necessary to meet the workforce capacity and high performance skill needs of the manufacturing-related sectors within the state. Read a 2014 FLATE report on the Evolution and Growth of Sustainability Careers at State and Community Colleges.<br>
-      
-      At the University level, programming includes a curriculum directed at the nuclear industry workforce, which now operates five nuclear power plants (FPL and PEF). To meet the demand anticipated from retirement and expansion, FESC has made a significant investment in the UF training reactor. FESC is developing a program to promote careers in nuclear energy and is evaluating the potential development of a community college level course that will introduce students to nuclear engineering and prepare them for pursuing a degree in the field. FESC is also developing a new M.S. degree program in Sustainable Energy and Power Engineering that will be distance delivered to make it available to the broadest of audiences.</p>
-    </section>  
-    
-    
-  </article>
-  
-  <footer>
-    <section class="footer-top">
-      <!--Find Us Section -->
-      <section class="find">
-        <h3>Find Us</h3>
-        <p class="find-bold">UNIVERISTY OF FLORIDA<br>
-        OFFICE OF RESEARCH</p>
-        <p>272 Grinter Hall <br>
-          P.O. Box 115500 <br>
-          Gainesville, FL 32611-5500</p>
-      </section>
-      
-      <!--Social Media Section -->
-      <section class="social">
-        <h3>Follow Us</h3>
-        <div class="social-icons">
-          <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
-          <a href="https://twitter.com" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
-          <a href="https://linkedin.com" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+  <div id="app">
+    <header>
+      <!-- Search Bar --> 
+      <section class="search-container">
+        <div class="search-box">
+          <form>
+            <input type="text" name="search" placeholder="Search">
+              <span class="fa fa-search"></span>
+  <!--            <i class="fa fa-search fa-1x" aria-hidden="true"></i>-->
+          </form>
         </div>
       </section>
-      
-      <!--Connect Section -->
-      <section class="connect">
-        <h3>Connect with Us</h3>
-        <div class="connect-info">
-          <p class="connect-bold">PHONE:</p>
-          <p>352-294-2027</p>
-          <p class="connect-bold">EMAIL:</p>
-          <p>dpnorton@ufl.edu</p>
+
+      <!--Nav Bar -->
+      <nav>
+        <!-- Logo -->
+        <div class="logo-container">
+          <div class="logo">
+            <a href="index.html"><img src="images/new-logo-285w.png" alt="Florida Energy Systems Consortium logo"></a>
+          </div>
         </div>
+
+        <!-- Nav Links -->
+        <ul>
+          <li><a href="research.html">RESEARCH</a></li>
+          <li><a href="education.html">EDUCATION</a></li>
+          <li><a href="energy-industry.html">INDUSTRY</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="contact-us.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <article>
+      <!-- Main Research section -->
+      <section>
+        <h2 class="inner-header">EDUCATION</h2>
+
+        <p class="industry-text">Florida’s State and Community Colleges offer an opportunity to develop a trained energy workforce through programming for two-year or four-year degrees.<br>
+
+        <br>FESC is working with the Florida Community College system as well as with the Florida Advanced Technological Education Center (FLATE), a National Science Foundation (NSF)-funded Regional Center that coordinates the design of industry-specific training programs for technicians. Complementary to FESC’s education goals, FLATE’s mission is to create a relevant statewide educational delivery system by supporting technical programs, curriculum development, best practices, student involvement, and outreach activities necessary to meet the workforce capacity and high performance skill needs of the manufacturing-related sectors within the state. Read a 2014 FLATE report on the Evolution and Growth of Sustainability Careers at State and Community Colleges.<br>
+
+        <br>At the University level, programming includes a curriculum directed at the nuclear industry workforce, which now operates five nuclear power plants (FPL and PEF). To meet the demand anticipated from retirement and expansion, FESC has made a significant investment in the UF training reactor. FESC is developing a program to promote careers in nuclear energy and is evaluating the potential development of a community college level course that will introduce students to nuclear engineering and prepare them for pursuing a degree in the field. FESC is also developing a new M.S. degree program in Sustainable Energy and Power Engineering that will be distance delivered to make it available to the broadest of audiences.</p>
       </section>  
-        
-    </section>
-    
-    <section class="copyright">
-      <p>Copyright 2018</p>
-    </section>
-  </footer>
+
+      <section>
+        <h3>FESC's Universities</h3>
+
+        <div v-for="logos in universities">
+          <a :href="logos.url">
+            <img :src="logos.imgSource" alt="logos.name">
+          </a>
+        </div> 
+      </section>
+
+
+    </article>
+
+    <footer>
+      <section class="footer-top">
+        <!--Find Us Section -->
+        <section class="find">
+          <h3>Find Us</h3>
+          <p class="find-bold">UNIVERISTY OF FLORIDA<br>
+          OFFICE OF RESEARCH</p>
+          <p>272 Grinter Hall <br>
+            P.O. Box 115500 <br>
+            Gainesville, FL 32611-5500</p>
+        </section>
+
+        <!--Social Media Section -->
+        <section class="social">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+          </div>
+        </section>
+
+        <!--Connect Section -->
+        <section class="connect">
+          <h3>Connect with Us</h3>
+          <div class="connect-info">
+            <p class="connect-bold">PHONE:</p>
+            <p>352-294-2027</p>
+            <p class="connect-bold">EMAIL:</p>
+            <p>dpnorton@ufl.edu</p>
+          </div>
+        </section>  
+
+      </section>
+
+      <section class="copyright">
+        <p>Copyright 2018</p>
+      </section>
+    </footer> 
+  </div>
+ <script src="scripts/vue-script.js"></script>
 </body>
 
 </html>

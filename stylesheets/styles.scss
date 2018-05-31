@@ -600,6 +600,45 @@ footer {
 }
 
 
+//////////////// EDUCATION PAGE ////////////////
+
+
+.universities {
+  padding: 0 0 4rem 0;
+  background-color: $main-color;
+  .universities-header {
+    text-align: center;
+    font-size: 1.25rem; 
+    color: $no-color;
+    letter-spacing: 1px;
+    padding: 2rem 0;
+    }
+  .universities-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0.5rem;
+    align-content: space-between;
+    justify-content: center;
+    .universities-logos {
+      flex: 1;
+      display: flex;
+      flex-direction: row-wrap;
+      align-content: space-between;
+      padding: 0.5rem 1rem;
+      background-color: $highlight-color;
+      margin: 1rem;
+      border-radius: 4px;
+      img {
+        padding: 0.5rem 1rem;
+        background-color: $highlight-color;
+        margin: 1rem;
+        border-radius: 4px;
+      }
+    }
+  }
+}
+
+
 
 //////////////// ENERGY-INDUSTRY PAGE ////////////////
 

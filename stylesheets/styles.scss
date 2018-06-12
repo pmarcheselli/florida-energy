@@ -8,7 +8,37 @@ $main-font: 'Raleway', sans-serif;
 $secondary-font: 'Lato', sans-serif;
 
 
-// GLOBAL STYLES
+// MIXINS
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column; 
+}
+
+
+/* TABLE OF CONTENTS
+    1. GLOBAL STYLES 
+    2. SEARCH BAR
+    3. NAV BAR
+    4. HERO
+    5. CARDS
+    6. NEWS SECTION
+    7. MISSION SECTION & VIDEO
+    8. NEWSLETTER SIGNUP
+    9. FOOTER
+    10. RESEARCH PAGE
+    11. EDUCATION PAGE
+    12. ENERGY-INDUSTRY PAGE
+    13. CONTACT PAGE
+*/
+
+
+// 1. GLOBAL STYLES
 
 * {
   margin: 0;
@@ -43,7 +73,7 @@ img {
   padding: 2rem 0;
 }
 
-// SEARCH BAR
+// 2. SEARCH BAR
 
 .search-container {
   display: flex;
@@ -51,8 +81,7 @@ img {
   width: 100%;
   background-color: $highlight-color;
   .search-box {
-    display: flex;
-    flex-direction: row;
+    @include flex-row;
     align-items: center;
     padding: 0.5rem 6rem 0.5rem 0;
     form {
@@ -79,7 +108,7 @@ img {
 }
 
 
-// NAV BAR
+// 3. NAV BAR
 
 .logo-container {
   display: flex;
@@ -122,8 +151,7 @@ nav ul {
 
 @media screen and (max-width: 690px) {
   nav, nav ul {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     justify-content: center;
   }
   .logo {
@@ -132,7 +160,7 @@ nav ul {
 }
 
 
-// HERO
+// 4. HERO
 
 .hero-image {
   height: 80vh;
@@ -151,8 +179,7 @@ nav ul {
     background-color: $main-color;
     opacity: 0.90;
     .hero-text {
-      display: flex;
-      flex-flow: column;
+      @include flex-column;
       margin: 0 4rem;
       h1 {
         margin-top: 0.75rem;
@@ -199,7 +226,7 @@ nav ul {
 }
 
 
-// CARDS
+// 5. CARDS
 
 .card-container {
   display: flex;
@@ -260,17 +287,15 @@ nav ul {
 }
 
 
-// NEWS SECTION
+// 6. NEWS SECTION
 
 .news {
   background-color: $main-color;
-  display: flex;
-  flex-direction: row;
+  @include flex-row;
   align-items: flex-start;
   padding: 3rem 4rem;
   .news-info {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     flex-basis: 50%;
     background-color: $main-color;
     h2 {
@@ -286,8 +311,7 @@ nav ul {
     }
   }
   .news-events {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     flex-basis: 50%;
     background-color: $main-color;
     padding-left: 4rem;
@@ -300,8 +324,7 @@ nav ul {
     .events-container {
 //      width: 95%;
       .date-box {
-        display: flex;
-        flex-direction: row;
+        @include flex-row;
         align-items: center;
         background-color: $highlight-color;
         margin: 0.25rem 0 0.45rem 0;
@@ -338,11 +361,10 @@ nav ul {
 }
 
 
-// MISSION SECTION & VIDEO
+// 7. MISSION SECTION & VIDEO
 
 .mission {
-  display: flex;
-  flex-direction: row;
+  @include flex-row;
   align-items: center;
   background-color: $highlight-color;
   margin: 3rem 4rem;
@@ -373,8 +395,7 @@ nav ul {
       padding: 3px 0;
     }
     .social-share {
-      display: flex;
-      flex-direction: row;
+      @include flex-row;
       align-items: center;
       padding-top: 0.5rem;
       .fb-share-button { 
@@ -400,7 +421,7 @@ nav ul {
 }
 
 
-// NEWSLETTER SIGNUP
+// 8. NEWSLETTER SIGNUP
 
 .newsletter-container {
   background-color: $main-color;
@@ -413,8 +434,7 @@ nav ul {
     letter-spacing: 1px;
   }
   .sign-up {
-    display: flex;
-    flex-direction: row;
+    @include flex-row;
     align-items: baseline;
     justify-content: center;
     h3 {
@@ -445,37 +465,32 @@ nav ul {
 
 @media screen and (max-width: 690px) {
   .newsletter-container {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     padding: 2rem 1rem;
     .sign-up {
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
       align-items: center;
     }
   }
   .newsletter-container input[type=email] {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     margin: 0.5rem 0;
   }
 }
 
 
-// FOOTER
+// 9. FOOTER
 
 footer {
   background-color: $no-color;
   .footer-top {
-  display: flex;
-  flex-direction: row;
+  @include flex-row;
   justify-content: center;
   align-items: flex-start;
   background-color: $no-color;
   margin: 1rem 4rem;
     .find {
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
       padding: 1rem;
       h3 {
         display: flex; 
@@ -498,8 +513,7 @@ footer {
       }
     }
     .social {
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
 //      justify-content: center;
       align-items: center;
       padding: 1rem;
@@ -512,8 +526,7 @@ footer {
         padding: 1rem 0 0.5rem 0;
       }
       .social-icons {
-        display: flex;
-        flex-direction: row;
+        @include flex-row;
 //        justify-content: center;
         padding: 0.25rem;
         a {
@@ -526,8 +539,7 @@ footer {
       }
     }
     .connect {
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
       padding: 1rem;
       h3 {
         color: $main-color;
@@ -536,8 +548,7 @@ footer {
         padding: 1rem 0 0.5rem 0;
       }
       .connect-info {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         .connect-bold {
           color: $accent-color;
           font-weight: bolder;
@@ -567,18 +578,15 @@ footer {
 
 @media screen and (max-width: 690px) {
   footer {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     margin: 0;
     .footer-top {
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
       padding: -1rem;
       .find, .social, .connect {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      width: 100%;
+        @include flex-column;
+        align-items: flex-start;
+        width: 100%;
       }
     }
   }
@@ -586,12 +594,11 @@ footer {
 
 
 
-//////////////// RESEARCH PAGE ////////////////
+//////////////// 10. RESEARCH PAGE ////////////////
 
 
 .chart-containter {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   align-items: center;
   padding: 0 0 4rem 0;
   .chart {
@@ -600,7 +607,7 @@ footer {
 }
 
 
-//////////////// EDUCATION PAGE ////////////////
+//////////////// 11. EDUCATION PAGE ////////////////
 
 
 .universities {
@@ -614,8 +621,7 @@ footer {
     padding: 2rem 0;
     }
   .universities-container {
-    display: flex;
-    flex-direction: row;
+    @include flex-row;
     margin: 0.5rem;
     align-content: space-between;
     justify-content: center;
@@ -640,12 +646,11 @@ footer {
 
 
 
-//////////////// ENERGY-INDUSTRY PAGE ////////////////
+//////////////// 12. ENERGY-INDUSTRY PAGE ////////////////
 
 
 .industry-grid {
-  display: flex;
-  flex-direction: row;
+  @include flex-row;
   .container {
     position: relative;
     width: 50%;
@@ -688,8 +693,7 @@ footer {
 
 @media screen and (max-width: 690px) {
   .industry-grid {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     align-items: center;
     .container {
       width: 100%;
@@ -700,18 +704,16 @@ footer {
   }
 }
   
-//////////////// CONTACT PAGE ////////////////
+//////////////// 13. CONTACT PAGE ////////////////
 
 
 .contact-container {
-  display: flex;
-  flex-direction: row;
+  @include flex-row;
   align-items: flex-start;
   background-color: $highlight-color;
   padding: 2rem 4rem 3rem 4rem;
   .contact-left {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     margin: 2rem 0;
     h3 {
       color: $accent-color;
@@ -765,8 +767,7 @@ footer {
 
 @media screen and (max-width: 690px) {
   .contact-container {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     padding: 0 0 0 3rem;
     img {
       width: 100%;

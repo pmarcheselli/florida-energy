@@ -783,11 +783,11 @@ footer {
     letter-spacing: 1px;
   }
   h4 {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     color: $main-color;
     font-size: 1.15rem;
     font-weight: bolder;
-    padding-bottom: .25rem;
+    padding-bottom: 1rem;
   }
   .contact-bold {
     color: $main-color;
@@ -805,7 +805,7 @@ footer {
     color: $main-color;
     font-size: 0.95rem;
     line-height: 22px;
-    padding-bottom: 0.25rem;
+    padding: 0.5rem 0 1rem 0;
     i {
       color: $accent-color;
       padding-right: 5px;
@@ -821,7 +821,7 @@ footer {
   .google-maps {
     width: 75%;
     position: relative;
-    padding-bottom: 75%; // aspect ratio
+    padding-bottom: 65%; // aspect ratio
     height: 0;
     overflow: hidden;
     margin-top: .5rem;
@@ -895,6 +895,8 @@ footer {
 @media screen and (max-width: 940px) {
   .contact-container {
     @include flex-column;
+     margin: 1rem 2rem;
+     padding: .5rem 1rem;
     .contact-left {
       width: 100%;
     }
@@ -903,5 +905,20 @@ footer {
     }
   }
 }
+
+@media screen and (max-width: 640px) {
+  .contact-container {
+    @include flex-column;
+    margin: 1rem;
+    padding: .5rem 1rem;
+    .contact-left {
+      width: 100%;
+    }
+    .contact-right {
+      width: 100%;
+    }
+  }
+}
+
 
 

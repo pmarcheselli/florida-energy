@@ -608,7 +608,7 @@ footer {
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
                 flex-direction: row;
-        padding: 0.25rem; }
+        padding: 0.25rem 0.15rem; }
         footer .footer-top .social .social-icons a {
           color: #062a5c;
           padding: 0.25rem; }

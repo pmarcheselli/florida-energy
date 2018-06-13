@@ -92,8 +92,7 @@ function drawConsumed(freshData) {
       'colors': ['#75a2d8'],
       textStyle: { fontSize: 16 },
       hAxis: { title: 'Year'},
-      vAxis: { title: 'Billion BTU'},
-      height: 500,
+      vAxis: { title: 'Billion BTU'}
       };
 
     var chart = new google.visualization.AreaChart(document.getElementById('line-chart2'));

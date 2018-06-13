@@ -41,6 +41,15 @@ img {
   letter-spacing: 1px;
   padding: 2rem 0; }
 
+.main-text {
+  color: #062a5c;
+  font-size: 1rem;
+  line-height: 20px;
+  padding: 3rem 4rem 3rem 4rem; }
+
+@media screen and (max-width: 690px) {
+  .main-text {
+    padding: 2rem; } }
 .search-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -222,7 +231,7 @@ nav ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 3rem 4rem; }
+  margin: 5rem 4rem; }
 
 .card {
   -webkit-box-flex: 1;
@@ -282,7 +291,7 @@ nav ul {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 3rem 4rem; }
+  padding: 5rem 4rem; }
   .news .news-info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -368,7 +377,7 @@ nav ul {
       -ms-flex-align: center;
           align-items: center;
   background-color: #ECECEC;
-  margin: 3rem 4rem; }
+  margin: 5rem 4rem; }
   .mission article {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -418,7 +427,7 @@ nav ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 1.5rem 1rem; }
+    margin: 1.5rem 2rem; }
     .mission .video-container {
       width: 100%;
       height: auto;
@@ -430,11 +439,11 @@ nav ul {
               justify-content: center;
       margin: 1rem; }
     .mission article {
-      padding: 1rem 3rem 2rem 3rem; } }
+      padding-left: 0; } }
 .newsletter-container {
   background-color: #062a5c;
   text-align: center;
-  padding: 3rem 0; }
+  padding: 5rem 4rem; }
   .newsletter-container h2 {
     color: #FFFFFF;
     font-size: 1.5rem;
@@ -509,6 +518,9 @@ nav ul {
             flex-direction: column;
     margin: 0.5rem 0;
     padding: 0.5rem 12rem 0.5rem 0.5rem; } }
+@media screen and (max-width: 940px) {
+  .newsletter-container input[type=email] {
+    padding: 0.25rem 6rem 0.25rem 0.25rem; } }
 footer {
   background-color: #FFFFFF; }
   footer .footer-top {
@@ -526,7 +538,7 @@ footer {
         -ms-flex-align: start;
             align-items: flex-start;
     background-color: #FFFFFF;
-    margin: 1rem 4rem; }
+    margin: 2rem 4rem; }
     footer .footer-top .find {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -677,7 +689,7 @@ footer {
           align-items: center;
   padding: 0 0 4rem 0; }
   .chart-containter .chart {
-    padding: 1rem; }
+    padding: 0 1rem 1rem 1rem; }
 
 .universities {
   padding: 0 0 4rem 0;
@@ -764,12 +776,6 @@ footer {
   -webkit-transform: scale(1);
           transform: scale(1); }
 
-.industry-text {
-  color: #062a5c;
-  font-size: 1rem;
-  line-height: 20px;
-  padding: 2rem 4rem 3rem 4rem; }
-
 @media screen and (max-width: 690px) {
   .industry-grid {
     display: -webkit-box;
@@ -783,10 +789,7 @@ footer {
         -ms-flex-align: center;
             align-items: center; }
     .industry-grid .container {
-      width: 100%; }
-
-  .industry-text {
-    padding: 2rem; } }
+      width: 100%; } }
 .contact-container {
   display: -webkit-box;
   display: -ms-flexbox;

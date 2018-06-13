@@ -73,6 +73,20 @@ img {
   padding: 2rem 0;
 }
 
+.main-text {
+  color: $main-color;
+  font-size: 1rem;
+  line-height: 20px;
+  padding: 3rem 4rem 3rem 4rem;  
+}
+
+@media screen and (max-width: 690px) {
+  .main-text {
+    padding: 2rem;
+  }
+}
+
+
 // 2. SEARCH BAR
 
 .search-container {
@@ -233,7 +247,7 @@ nav ul {
   flex-flow: wrap;
   align-items: stretch;
   justify-content: center;
-  margin: 3rem 4rem;
+  margin: 5rem 4rem;
 }
 
 .card {
@@ -293,7 +307,7 @@ nav ul {
   background-color: $main-color;
   @include flex-row;
   align-items: flex-start;
-  padding: 3rem 4rem;
+  padding: 5rem 4rem;
   .news-info {
     @include flex-column;
     flex-basis: 50%;
@@ -367,15 +381,11 @@ nav ul {
   @include flex-row;
   align-items: center;
   background-color: $highlight-color;
-  margin: 3rem 4rem;
-  .video-container {
-//    margin-right: 1rem;
-  }
+  margin: 5rem 4rem;
   article {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-//    padding: 0 0 0 2.5rem;
     padding-left: 4rem;
     h2 {
       color: $main-color;
@@ -411,7 +421,7 @@ nav ul {
 @media screen and (max-width: 1170px){
     .mission {
     flex-direction: column;
-    margin: 1.5rem 1rem;
+    margin: 1.5rem 2rem;
     .video-container {
       width: 100%;
       height: auto;
@@ -420,7 +430,7 @@ nav ul {
       margin: 1rem;
     }
     article {
-      padding: 1rem 3rem 2rem 3rem;
+      padding-left: 0;
     }
   }
 }
@@ -431,7 +441,7 @@ nav ul {
 .newsletter-container {
   background-color: $main-color;
   text-align: center;
-  padding: 3rem 0;
+  padding: 5rem 4rem;
   h2 {
     color: $no-color;
     font-size: 1.5rem;
@@ -486,6 +496,11 @@ nav ul {
   }
 }
 
+@media screen and (max-width: 940px) {
+  .newsletter-container input[type=email] {
+    padding: 0.25rem 6rem 0.25rem 0.25rem;
+  }
+}
 
 // 9. FOOTER
 
@@ -496,7 +511,7 @@ footer {
   justify-content: center;
   align-items: flex-start;
   background-color: $no-color;
-  margin: 1rem 4rem;
+  margin: 2rem 4rem;
     .find {
       @include flex-column;
       padding: 1rem;
@@ -610,7 +625,7 @@ footer {
   align-items: center;
   padding: 0 0 4rem 0;
   .chart {
-    padding: 1rem;
+    padding: 0 1rem 1rem 1rem;
   }
 }
 
@@ -692,13 +707,6 @@ footer {
   transform: scale(1)
 }
 
-.industry-text {
-  color: $main-color;
-  font-size: 1rem;
-  line-height: 20px;
-  padding: 2rem 4rem 3rem 4rem;  
-}
-
 @media screen and (max-width: 690px) {
   .industry-grid {
     @include flex-column;
@@ -706,9 +714,6 @@ footer {
     .container {
       width: 100%;
     }
-  }
-  .industry-text {
-    padding: 2rem;
   }
 }
   

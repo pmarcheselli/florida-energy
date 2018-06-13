@@ -292,6 +292,15 @@ nav ul {
           flex-basis: initial; }
       .card-container .card img {
         width: 100%; } }
+@media screen and (min-width: 1140px) {
+  .card-container {
+    margin: 4rem 4rem; }
+    .card-container .card {
+      -webkit-box-flex: 2;
+          -ms-flex-positive: 2;
+              flex-grow: 2; }
+      .card-container .card img {
+        width: 100%; } }
 .news {
   background-color: #062a5c;
   display: -webkit-box;

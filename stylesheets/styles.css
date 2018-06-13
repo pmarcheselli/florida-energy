@@ -294,7 +294,7 @@ nav ul {
         width: 100%; } }
 @media screen and (min-width: 1140px) {
   .card-container {
-    margin: 4rem 4rem; }
+    margin: 5rem 4rem; }
     .card-container .card {
       -webkit-box-flex: 2;
           -ms-flex-positive: 2;

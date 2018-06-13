@@ -522,10 +522,12 @@ nav ul {
   margin-left: 5px;
   background-color: #75a2d8;
   color: #FFFFFF;
-  padding: 0.5rem 2rem;
-  font-size: 0.75rem;
+  text-align: center;
+  font-size: 0.85rem;
   letter-spacing: 1px;
-  border-radius: 3px; }
+  border: none;
+  border-radius: 3px;
+  padding: 0.5rem 2rem; }
 
 @media screen and (max-width: 940px) {
   .newsletter-container {
@@ -566,7 +568,7 @@ nav ul {
   .newsletter-container input[type=email] {
     padding: 0.25rem 6rem 0.25rem 0.25rem; }
 
-  .submit-button {
+  .submit-btn {
     padding: 0.25rem 1rem; } }
 footer {
   background-color: #FFFFFF; }

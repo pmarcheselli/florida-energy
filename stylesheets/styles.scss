@@ -98,7 +98,7 @@ img {
     @include flex-row;
     align-items: center;
     padding: 0.5rem 6rem 0.5rem 0;
-    form {
+    .search-form {
       border-radius: 5px;
     }
   }
@@ -508,7 +508,7 @@ nav ul {
   padding: 0.5rem 16rem 0.5rem 0.5rem;
 }
 
-.submit-button {
+.submit-btn {
   border: none;
   margin-left: 5px;
   background-color: $accent-color;
@@ -533,7 +533,7 @@ nav ul {
     margin: 0.5rem 0;
     padding: 0.5rem 12rem 0.5rem 0.5rem;
   }
-  .submit-button {
+  .submit-btn {
     padding: 1.5rem 0.75rem;
 //    margin: 0.5rem;
   }
@@ -769,72 +769,137 @@ footer {
   align-items: flex-start;
   background-color: $highlight-color;
   padding: 2rem 4rem 3rem 4rem;
-  .contact-left {
-    @include flex-column;
-    margin: 2rem 0;
-    h3 {
-      color: $accent-color;
-      font-size: 1.25rem;
-      font-weight: bolder;
-      padding-bottom: 0.5rem;
-      letter-spacing: 1px;
-    }
-    .contact-bold {
-      color: $main-color;
-      font-size: 1rem;
-      font-weight: bolder;
-      line-height: 18px;
-    }
-    p {
-      color: $main-color;
-      font-size: 0.95rem;
-      line-height: 18px;
-      padding-top: 3px;
-      
-    }
-    address {
-      color: $main-color;
-      font-size: 0.95rem;
-      line-height: 22px;
-      padding-bottom: 0.25rem;
-      i {
-        color: $accent-color;
-        padding-right: 5px;
-      }
-      a {
-        color: $main-color;
-        text-decoration: none;
-        &:hover {
-          color: $accent-color;
-        }
-      }
-    }
-    img {
-      width: 90%;
-    }
-  }
-  .contact-right {
-    display: flex;
-    flex-direction: column; 
-    iframe {
-      margin: 2rem 0;
-    }
-  }
 }
 
-@media screen and (max-width: 690px) {
+.contact-left {
+  @include flex-column;
+  margin: 2rem 1rem;
+  width: 50%;
+  h3 {
+    color: $accent-color;
+    font-size: 1.25rem;
+    font-weight: bolder;
+    padding-bottom: 0.5rem;
+    letter-spacing: 1px;
+  }
+  h4 {
+    margin-top: 1rem;
+    color: $main-color;
+    font-size: 1.15rem;
+    font-weight: bolder;
+    padding-bottom: .25rem;
+  }
+  .contact-bold {
+    color: $main-color;
+    font-size: 1rem;
+    font-weight: bolder;
+    line-height: 18px;
+  }
+  p {
+    color: $main-color;
+    font-size: 0.95rem;
+    line-height: 18px;
+    padding-top: 3px;    
+  }
+  address {
+    color: $main-color;
+    font-size: 0.95rem;
+    line-height: 22px;
+    padding-bottom: 0.25rem;
+    i {
+      color: $accent-color;
+      padding-right: 5px;
+    }
+    a {
+      color: $main-color;
+      text-decoration: none;
+      &:hover {
+        color: $accent-color;
+      }
+    }
+   }
+  .google-maps {
+    width: 75%;
+    position: relative;
+    padding-bottom: 75%; // aspect ratio
+    height: 0;
+    overflow: hidden;
+    margin-top: .5rem;
+    .google-maps iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100% !important;
+    }
+  } 
+}
+
+
+
+.contact-right {
+  display: flex;
+  flex-direction: column; 
+  width: 50%;
+  margin: 2rem 1rem;
+  h3 {
+    color: $accent-color;
+    font-size: 1.25rem;
+    font-weight: bolder;
+    padding-bottom: 0.5rem;
+    letter-spacing: 1px;
+  }
+  .contact-form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    input[type=text], input[type=tel], input[type=email] {
+      font-family: $secondary-font;
+      color: darkgrey;
+      font-size: 0.85rem;
+      width: 100%;
+      padding: 1rem 12rem 1rem 1.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    } 
+    textarea {
+      font-family: $secondary-font;
+      color: darkgrey;
+      font-size: 0.85rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 100%;
+      padding: 1rem 12rem 10rem 1.5rem;
+      resize: vertical;
+    }
+    .form-btn {
+      border: none;
+      background-color: $accent-color;
+      color: $no-color;
+      text-align: center;
+      padding: 0.5rem 1rem;
+      font-size: 0.75rem;
+      letter-spacing: 1px;
+      border-radius: 3px;
+      margin-top: 1.25rem;
+      margin-bottom: 1rem;
+      width: 25%;
+    }
+  }
+}    
+  
+
+@media screen and (max-width: 940px) {
   .contact-container {
     @include flex-column;
-    padding: 0 0 0 3rem;
-    img {
+    .contact-left {
       width: 100%;
     }
     .contact-right {
-      padding: 0;
-      iframe {
-        margin: 0 0 1rem 0;
-        width: 100%;
-      }
+      width: 100%;
     }
   }
 }

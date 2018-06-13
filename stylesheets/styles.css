@@ -71,7 +71,7 @@ img {
         -ms-flex-align: center;
             align-items: center;
     padding: 0.5rem 6rem 0.5rem 0; }
-    .search-container .search-box form {
+    .search-container .search-box .search-form {
       border-radius: 5px; }
 
 .search-box input[type=text] {
@@ -517,7 +517,7 @@ nav ul {
   border-radius: 3px;
   padding: 0.5rem 16rem 0.5rem 0.5rem; }
 
-.submit-button {
+.submit-btn {
   border: none;
   margin-left: 5px;
   background-color: #75a2d8;
@@ -560,7 +560,7 @@ nav ul {
     margin: 0.5rem 0;
     padding: 0.5rem 12rem 0.5rem 0.5rem; }
 
-  .submit-button {
+  .submit-btn {
     padding: 1.5rem 0.75rem; } }
 @media screen and (max-width: 940px) {
   .newsletter-container input[type=email] {
@@ -850,47 +850,84 @@ footer {
           align-items: flex-start;
   background-color: #ECECEC;
   padding: 2rem 4rem 3rem 4rem; }
-  .contact-container .contact-left {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 2rem 0; }
-    .contact-container .contact-left h3 {
+
+.contact-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2rem 1rem;
+  width: 50%; }
+  .contact-left h3 {
+    color: #75a2d8;
+    font-size: 1.25rem;
+    font-weight: bolder;
+    padding-bottom: 0.5rem;
+    letter-spacing: 1px; }
+  .contact-left h4 {
+    margin-top: 1rem;
+    color: #062a5c;
+    font-size: 1.15rem;
+    font-weight: bolder;
+    padding-bottom: .25rem; }
+  .contact-left .contact-bold {
+    color: #062a5c;
+    font-size: 1rem;
+    font-weight: bolder;
+    line-height: 18px; }
+  .contact-left p {
+    color: #062a5c;
+    font-size: 0.95rem;
+    line-height: 18px;
+    padding-top: 3px; }
+  .contact-left address {
+    color: #062a5c;
+    font-size: 0.95rem;
+    line-height: 22px;
+    padding-bottom: 0.25rem; }
+    .contact-left address i {
       color: #75a2d8;
-      font-size: 1.25rem;
-      font-weight: bolder;
-      padding-bottom: 0.5rem;
-      letter-spacing: 1px; }
-    .contact-container .contact-left .contact-bold {
+      padding-right: 5px; }
+    .contact-left address a {
       color: #062a5c;
-      font-size: 1rem;
-      font-weight: bolder;
-      line-height: 18px; }
-    .contact-container .contact-left p {
-      color: #062a5c;
-      font-size: 0.95rem;
-      line-height: 18px;
-      padding-top: 3px; }
-    .contact-container .contact-left address {
-      color: #062a5c;
-      font-size: 0.95rem;
-      line-height: 22px;
-      padding-bottom: 0.25rem; }
-      .contact-container .contact-left address i {
-        color: #75a2d8;
-        padding-right: 5px; }
-      .contact-container .contact-left address a {
-        color: #062a5c;
-        text-decoration: none; }
-        .contact-container .contact-left address a:hover {
-          color: #75a2d8; }
-    .contact-container .contact-left img {
-      width: 90%; }
-  .contact-container .contact-right {
+      text-decoration: none; }
+      .contact-left address a:hover {
+        color: #75a2d8; }
+  .contact-left .google-maps {
+    width: 75%;
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+    margin-top: .5rem; }
+    .contact-left .google-maps .google-maps iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100% !important; }
+
+.contact-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  margin: 2rem 1rem; }
+  .contact-right h3 {
+    color: #75a2d8;
+    font-size: 1.25rem;
+    font-weight: bolder;
+    padding-bottom: 0.5rem;
+    letter-spacing: 1px; }
+  .contact-right .contact-form {
+    margin-top: 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -898,10 +935,40 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-    .contact-container .contact-right iframe {
-      margin: 2rem 0; }
+    .contact-right .contact-form input[type=text], .contact-right .contact-form input[type=tel], .contact-right .contact-form input[type=email] {
+      font-family: "Lato", sans-serif;
+      color: darkgrey;
+      font-size: 0.85rem;
+      width: 100%;
+      padding: 1rem 12rem 1rem 1.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical; }
+    .contact-right .contact-form textarea {
+      font-family: "Lato", sans-serif;
+      color: darkgrey;
+      font-size: 0.85rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 100%;
+      padding: 1rem 12rem 10rem 1.5rem;
+      resize: vertical; }
+    .contact-right .contact-form .form-btn {
+      border: none;
+      background-color: #75a2d8;
+      color: #FFFFFF;
+      text-align: center;
+      padding: 0.5rem 1rem;
+      font-size: 0.75rem;
+      letter-spacing: 1px;
+      border-radius: 3px;
+      margin-top: 1.25rem;
+      margin-bottom: 1rem;
+      width: 25%; }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 940px) {
   .contact-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -909,14 +976,10 @@ footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 0 0 0 3rem; }
-    .contact-container img {
+            flex-direction: column; }
+    .contact-container .contact-left {
       width: 100%; }
     .contact-container .contact-right {
-      padding: 0; }
-      .contact-container .contact-right iframe {
-        margin: 0 0 1rem 0;
-        width: 100%; } }
+      width: 100%; } }
 
 /*# sourceMappingURL=styles.css.map */

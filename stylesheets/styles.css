@@ -91,7 +91,7 @@ img {
       -ms-flex-pack: end;
           justify-content: flex-end; }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 790px) {
   .search-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -149,7 +149,7 @@ nav ul {
       nav ul li a:hover {
         color: #75a2d8; }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 790px) {
   nav, nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -162,8 +162,11 @@ nav ul {
         -ms-flex-pack: center;
             justify-content: center; }
 
-  .logo {
-    width: 100%; } }
+  .logo-container {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
 .hero-image {
   height: 80vh;
   display: -webkit-box;
@@ -281,7 +284,7 @@ nav ul {
         -ms-flex-pack: center;
             justify-content: center; }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 740px) {
   .card-container {
     margin: 1rem; }
     .card-container .card {
@@ -437,6 +440,25 @@ nav ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: 3rem 4rem; }
+    .mission .video-container {
+      width: 100%;
+      height: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin: 1rem 0 2rem 0; }
+    .mission article {
+      padding-left: 0; } }
+@media screen and (max-width: 690px) {
+  .mission {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 1.5rem 2rem; }
     .mission .video-container {
       width: 100%;
@@ -527,7 +549,10 @@ nav ul {
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 0.5rem 0;
-    padding: 0.5rem 12rem 0.5rem 0.5rem; } }
+    padding: 0.5rem 12rem 0.5rem 0.5rem; }
+
+  .submit-button {
+    padding: 1.5rem 0.75rem; } }
 @media screen and (max-width: 940px) {
   .newsletter-container input[type=email] {
     padding: 0.25rem 6rem 0.25rem 0.25rem; }

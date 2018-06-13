@@ -121,7 +121,7 @@ img {
   justify-content: flex-end;
 }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 790px) {
   .search-container {
     display: flex;
     justify-content: center;
@@ -173,13 +173,14 @@ nav ul {
   }
 }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 790px) {
   nav, nav ul {
     @include flex-column;
     justify-content: center;
   }
-  .logo {
+  .logo-container {
     width: 100%;
+    justify-content: center;
   }
 }
 
@@ -298,7 +299,7 @@ nav ul {
   }
 }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 740px) {
   .card-container {
     margin: 1rem;
     .card {
@@ -431,6 +432,23 @@ nav ul {
 @media screen and (max-width: 1170px){
     .mission {
     flex-direction: column;
+    margin: 3rem 4rem;
+    .video-container {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      margin: 1rem 0 2rem 0;
+    }
+    article {
+      padding-left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 690px){
+    .mission {
+    flex-direction: column;
     margin: 1.5rem 2rem;
     .video-container {
       width: 100%;
@@ -503,6 +521,10 @@ nav ul {
     @include flex-column;
     margin: 0.5rem 0;
     padding: 0.5rem 12rem 0.5rem 0.5rem;
+  }
+  .submit-button {
+    padding: 1.5rem 0.75rem;
+//    margin: 0.5rem;
   }
 }
 

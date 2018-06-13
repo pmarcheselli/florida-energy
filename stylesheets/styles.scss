@@ -121,6 +121,16 @@ img {
   justify-content: flex-end;
 }
 
+@media screen and (max-width: 690px) {
+  .search-container {
+    display: flex;
+    justify-content: center;
+    .search-box {
+      padding: 0.5rem 0.25rem;
+    }
+  }
+}
+
 
 // 3. NAV BAR
 

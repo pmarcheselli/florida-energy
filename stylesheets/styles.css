@@ -477,7 +477,7 @@ nav ul {
   letter-spacing: 1px;
   border-radius: 3px; }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 940px) {
   .newsletter-container {
     display: -webkit-box;
     display: -ms-flexbox;

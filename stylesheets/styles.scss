@@ -666,12 +666,39 @@ footer {
 //////////////// 10. RESEARCH PAGE ////////////////
 
 
-.chart-containter {
-  @include flex-column;
-  align-items: center;
+.chart-container {
+  @include flex-row;
   padding: 0 0 4rem 0;
+  margin: 0 6rem;
   .chart {
     padding: 0 1rem 1rem 1rem;
+  }
+}
+
+#line-chart1, #line-chart2 {
+  width: 80%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1180px) {
+  .chart-container {
+    @include flex-column;
+    align-items: center;
+    margin: 0 4rem;
+    .chart {
+      padding: 0.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .chart-container {
+    @include flex-column;
+    align-items: center;
+    margin: 1rem;
+    .chart {
+      padding: 0.5rem;
+    }
   }
 }
 

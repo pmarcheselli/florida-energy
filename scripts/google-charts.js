@@ -50,6 +50,10 @@ function drawProduction(freshData) {
 
     var chart = new google.visualization.AreaChart(document.getElementById('line-chart1'));
     chart.draw(data, options);
+  
+    window.addEventListener('resize', function() {
+      chart.draw(data, options);
+    }, false);
 }
 
 // Draw second chart for Energy Consumption
@@ -97,5 +101,10 @@ function drawConsumed(freshData) {
 
     var chart = new google.visualization.AreaChart(document.getElementById('line-chart2'));
     chart.draw(data, options);
+  
+    window.addEventListener('resize', function() {
+      chart.draw(data, options);
+    }, false);
 }
+
 

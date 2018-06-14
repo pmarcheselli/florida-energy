@@ -782,32 +782,11 @@ footer {
         /* For IE8 and earlier */ }
 
 @media screen and (max-width: 790px) {
-  .universities-container {
-    margin: 1rem 1.5rem; }
-
-  .universities-logos {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column; }
-    .universities-logos div {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-preferred-size: 25%;
-          flex-basis: 25%;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      padding: 0; }
-    .universities-logos img {
-      padding: 0.25rem; } }
+  .universities .universities-container {
+    margin: 1rem; }
+    .universities .universities-container .universities-logos div {
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%; } }
 .industry-grid {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -695,16 +695,13 @@ footer {
       display: flex;
       flex-flow: row wrap;
       justify-content: space-between;
-//      padding: 0.5rem 1rem;
       background-color: $no-color;
-//      margin: 1rem;
       border-radius: 4px;
       div {
         display: flex;
         flex-basis: 15%;
         justify-content: center;
         align-items: center;
-//        padding: 1.5rem;
       }
       img {
 //        padding: 1rem;
@@ -718,24 +715,18 @@ footer {
 }
 
 @media screen and (max-width: 790px) {
-  .universities-container {
-    margin: 1rem 1.5rem;
-  }
-  .universities-logos {
-    display: flex;
-    flex-flow: column;
-    div {
-      display: flex;  
-        flex-basis: 25%;
-        justify-content: center;
-        align-items: center;  
-        padding: 0;  
-      }
-      img {
-        padding: 0.25rem;
+  .universities {
+    .universities-container {
+      margin: 1rem;
+      .universities-logos {
+//        flex-direction: column;
+        div {
+          flex-basis: 50%;
+        }
       }
     }
-  }
+  } 
+}
 
   
 

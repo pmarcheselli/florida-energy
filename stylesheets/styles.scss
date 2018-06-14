@@ -690,24 +690,24 @@ footer {
     padding: 2rem 4rem;
     }
   .universities-container {
-      margin: 1rem;
+      margin: 1rem 8rem;
     .universities-logos {
       display: flex;
       flex-flow: row wrap;
       justify-content: space-between;
-      padding: 0.5rem 1rem;
+//      padding: 0.5rem 1rem;
       background-color: $no-color;
-      margin: 1rem;
+//      margin: 1rem;
       border-radius: 4px;
       div {
         display: flex;
-        flex-basis: 25%;
+        flex-basis: 15%;
         justify-content: center;
         align-items: center;
-        padding: 1.5rem;
+//        padding: 1.5rem;
       }
       img {
-        padding: 1rem;
+//        padding: 1rem;
         &:hover {
           opacity: 0.5;
           filter: alpha(opacity=50); /* For IE8 and earlier */
@@ -718,21 +718,25 @@ footer {
 }
 
 @media screen and (max-width: 790px) {
+  .universities-container {
+    margin: 1rem 1.5rem;
+  }
   .universities-logos {
     display: flex;
     flex-flow: column;
     div {
       display: flex;  
-      flex-basis: initial;
-      justify-content: center;
-      align-items: center;  
-      padding: 0;  
-    } 
-    img {
-      padding: 0.25rem;
+        flex-basis: 25%;
+        justify-content: center;
+        align-items: center;  
+        padding: 0;  
+      }
+      img {
+        padding: 0.25rem;
+      }
     }
   }
-}
+
   
 
 //////////////// 12. ENERGY-INDUSTRY PAGE ////////////////

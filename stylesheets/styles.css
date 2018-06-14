@@ -750,7 +750,7 @@ footer {
     letter-spacing: 1px;
     padding: 2rem 4rem; }
   .universities .universities-container {
-    margin: 1rem; }
+    margin: 1rem 8rem; }
     .universities .universities-container .universities-logos {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -762,31 +762,29 @@ footer {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      padding: 0.5rem 1rem;
       background-color: #FFFFFF;
-      margin: 1rem;
       border-radius: 4px; }
       .universities .universities-container .universities-logos div {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -ms-flex-preferred-size: 25%;
-            flex-basis: 25%;
+        -ms-flex-preferred-size: 15%;
+            flex-basis: 15%;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
         -webkit-box-align: center;
             -ms-flex-align: center;
-                align-items: center;
-        padding: 1.5rem; }
-      .universities .universities-container .universities-logos img {
-        padding: 1rem; }
-        .universities .universities-container .universities-logos img:hover {
-          opacity: 0.5;
-          filter: alpha(opacity=50);
-          /* For IE8 and earlier */ }
+                align-items: center; }
+      .universities .universities-container .universities-logos img:hover {
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+        /* For IE8 and earlier */ }
 
 @media screen and (max-width: 790px) {
+  .universities-container {
+    margin: 1rem 1.5rem; }
+
   .universities-logos {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -799,8 +797,8 @@ footer {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -ms-flex-preferred-size: initial;
-          flex-basis: initial;
+      -ms-flex-preferred-size: 25%;
+          flex-basis: 25%;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
